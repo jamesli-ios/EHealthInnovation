@@ -1,0 +1,1848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01AA539ACC1182F8CDD5891180C72F3E /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198FD3A4C8203F30F329344EE0C14C0D /* Duration.swift */; };
+		023865F8CF00746CC08E6F9A7EBFCEC0 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8594B889088BA2E8192C49D081DA3551 /* Communication.swift */; };
+		0291C282741826BC9403A4DAF73BFACC /* CodeSystems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F11CFBC8F9FEE590A711B5F2319B96 /* CodeSystems.swift */; };
+		02E067EA429F803667AAE58F8BEE74BC /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A7D3A468AF1EA207008B509F749F71 /* Device.swift */; };
+		0378C1E14C5D221F3D70CAA03DD1D023 /* ExplanationOfBenefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B5102F2BEB8D23BBB1D2002675343 /* ExplanationOfBenefit.swift */; };
+		03E0152796361E84A8A4D75DA62FCD37 /* FHIROpenServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76939E0452E8781B8C602C881289B3 /* FHIROpenServer.swift */; };
+		04AF13C55A3621BFFE0C81910F3EC330 /* OAuth2Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF2DBA1A1641C453643F8F1E06B9 /* OAuth2Requestable.swift */; };
+		05019249D48C60D7D0834F3B3E15B31C /* RiskAssessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACEADA1C3ABA012177D4433536587E4 /* RiskAssessment.swift */; };
+		0564B7D21D07F5824164B7AEE17156F7 /* FHIRRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC2CCA3A0C6151EAC67BB10F1609F1 /* FHIRRequest.swift */; };
+		06E1CB1DE572CE76072638293CBE60CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		07E3C0DD1BC802C483620D4B43A0CFAD /* OAuth2ClientCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD92D8A5834A9022B8CBA9BDFF34D2A /* OAuth2ClientCredentials.swift */; };
+		07F144F181A24662632D7D77A680F9FC /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BA25B23F02309C806ECA2F297D23B /* Appointment.swift */; };
+		080E93CFDA40B39568925E527F2B917A /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B60A4CE1A293E9CD71766666C4831E /* Attachment.swift */; };
+		09A92AFE301C9A3CCE298DE49F0455BE /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD24A533777CFDDDD8C3BCFA1FE04771 /* Identifier.swift */; };
+		0A3ED818F767D6864CC5379FD185EF05 /* ConceptMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908F668ABFB8454ED665CB00C2261740 /* ConceptMap.swift */; };
+		0B0F9A183F534F938FE252EC927E8477 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0BA8840CA0016D2104966A62864A3768 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD8D738F964E717D0A5484A82D6FCF /* Contributor.swift */; };
+		0CF350996C607071D9A4AFCA7B8BFEA8 /* FHIRURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9737A1AFE4D04EDA693368FC9845F5 /* FHIRURL.swift */; };
+		0CFC64B1B2E8A5A0688593B68FC46D86 /* FHIRBaseRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAD23C5204E996071F866A04A82605 /* FHIRBaseRequestHandler.swift */; };
+		0D66E04D349D6C06492275A719CE2486 /* SpecimenDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0A3D87A601C86679D50516B07E87D /* SpecimenDefinition.swift */; };
+		0DF71FCDEF7B465D025917F48CE329FA /* Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271CFEFC230857162646D4C625B721B5 /* Consent.swift */; };
+		0E67EB4F68466AEB8907E9A0AA73CDE8 /* SubstanceProtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658254479D65A799EDC9B85E3D7C17CC /* SubstanceProtein.swift */; };
+		0FCEF798A0FA0F1A5E55EE4756613A18 /* OAuth2CodeGrantLinkedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F874D5628806F95BC06742B40A8F166 /* OAuth2CodeGrantLinkedIn.swift */; };
+		0FD7FC45CDAE1E59241235819837CFBA /* ParameterDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1213E8A51F2BBF8F01FC96853ABF6F /* ParameterDefinition.swift */; };
+		122989CCC90D0CC421F739FD06FF8E48 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0237139B04C5AFD28BB7C778CB9CF1D /* Goal.swift */; };
+		126AD8FC45AE3DEFD14D3F45F8AB357C /* CommunicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A8F747AF754938845ADA1174335A7 /* CommunicationRequest.swift */; };
+		12D9EA80B6F1027569AA061C55D8A028 /* MedicinalProductIndication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC12BD2FF8D65729D37A238BFA8AAC /* MedicinalProductIndication.swift */; };
+		12EDF107AFC77505EC0973AF4D8FAF13 /* FHIRType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88939276971E3F64D8B04A86E2373FBC /* FHIRType.swift */; };
+		1305E70996DE3630D846A26FC55BDB56 /* CareTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F199A6B183C3D1FF65D7F00FE2AE81 /* CareTeam.swift */; };
+		1407ED658AD51B97FE22A234ABE6F9C6 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C3C34C6A08FB47874E0443C318BDC /* Auth.swift */; };
+		1458059E3ACF476B8C8C1D858F3E4523 /* SMART-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A803163724B7E1E39508BE60D6530F56 /* SMART-dummy.m */; };
+		1487F586DAF599884DCDF0208ECCF3A0 /* DeviceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF8663D798AA3895BE3954ACB6E6171 /* DeviceRequest.swift */; };
+		14F5AC0E655EA14AA78D0CE3BA360755 /* Specimen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496090B63516E6E2657D26EB6B957AD /* Specimen.swift */; };
+		15BFA204961BCE90416DC450BA75EEC7 /* MeasureReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80139983E8DF9E22A016C7DBF8A465B4 /* MeasureReport.swift */; };
+		16015536F68D08C337CE341EAC3BBEB0 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C221B400C8C506D8B7E99C25E35A45 /* Client.swift */; };
+		16DBBA45988F1031140F7AD77730EB5A /* OAuth2ImplicitGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19438004044999F667C6392C00C32FFE /* OAuth2ImplicitGrant.swift */; };
+		16F1A5759316C443EF4F2908564AA218 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D4116732099C3FE6E7083DDD81B4A /* Range.swift */; };
+		17AFAE0ADCE40CA8D2324D832B3BB583 /* ClaimResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC52CFFF1AA22EE9A0ADF415998E9BB /* ClaimResponse.swift */; };
+		1877CDEC524B8C856F65EE0DB93D7947 /* FHIRMinimalServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29648F54CDB72EC28CDDD847102C8B /* FHIRMinimalServer.swift */; };
+		18D4E9A676B0C23A9F5DA64A83B4C5BC /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912D78070846BAFECE17ED2BDD603019 /* Subscription.swift */; };
+		1B7B9D8234D3599BFC60919CF6008B0C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0938AF4547BC8ED9857F444AF1ACAC5 /* Expression.swift */; };
+		1BBA919053839B63C910DC6EBC946086 /* ElementDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4928A0485026EE82758B833EC272B /* ElementDefinition.swift */; };
+		1C5062C252E1F823D75275680D2B2736 /* ObservationDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14681C1F28A546C8197DB8E8E0C4C9F2 /* ObservationDefinition.swift */; };
+		1D937D91A83DD685675DD96F710C4A38 /* DeviceDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3555C82AF3A49E41DCE69937A165BB /* DeviceDefinition.swift */; };
+		1E20B4D312A90898926AF659B9D033BD /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5D552CDB5D3FC58F665C751C8DC0EF /* Element.swift */; };
+		1E582BFDE078524BA85C7BC132903D52 /* Provenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B02EF340895BF3A72EF8FC6008EE30 /* Provenance.swift */; };
+		1EDD5C67D9B33F57902B7B7F50CD489A /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21931CA355B9E5666D098D3088AB11B6 /* Address.swift */; };
+		1EE42C5D160C32D52202664E0E267376 /* OAuth2CodeGrantAzure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E4AE4D97D9DC807E545F89921989C5 /* OAuth2CodeGrantAzure.swift */; };
+		1FA73211AD6761F94C5176DB80778459 /* MedicinalProductInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F928B5EB738F815C4A0F6561CE1553A /* MedicinalProductInteraction.swift */; };
+		201DFFE674DE7DF294946609599EB5E2 /* ImagingStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB6DAF201B721C95FDEDC2C034008C /* ImagingStudy.swift */; };
+		2035796516D1D9E37AC9F4E1F5C6F4CC /* Resource+Instantiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944AA23C73EE56CDEE6249812165C88C /* Resource+Instantiation.swift */; };
+		204194E7BB35F9208D3F9BA86C57285F /* DocumentManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93954840DD04F025FEAF6F34A51982A5 /* DocumentManifest.swift */; };
+		20AD1676A7FB8711C3227C12A2CC879E /* ChargeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6222CACC7A9F0FD9C3427EAF90820CF1 /* ChargeItem.swift */; };
+		22674DF41A2A38FE1FE331224BB79815 /* RelatedPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB42B5DBF6AC8BAA49901003EE1FA3FF /* RelatedPerson.swift */; };
+		22AEB985AF03A2EBE1AC1F28B4C57EC9 /* MetadataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A0BE192FAC7766F989F7AE3324660 /* MetadataResource.swift */; };
+		231C3A68D447A36D3A96E29344F5B211 /* Patient+SMART.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9919DF546FFD16DA065B8C1913A7D72 /* Patient+SMART.swift */; };
+		261627B79C0205C4D5D88EF32DC67974 /* MedicinalProductAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6862D1CCB64D525814093196CA036 /* MedicinalProductAuthorization.swift */; };
+		28417A63FD7481189F1AC4DB2BD2DF18 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2044D5E1B259789751A18815BDA99AB /* ServiceRequest.swift */; };
+		2858EC15C8B349F48A5BB12A9CF9EF19 /* OAuth2CodeGrantBasicAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11501D19413028C9032926BB765697B /* OAuth2CodeGrantBasicAuth.swift */; };
+		2C13EE27D250D0652E3F8ED3C13CEC7B /* ImmunizationEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DCEC8DE6D53EA9C45D2BE639F0FAB6 /* ImmunizationEvaluation.swift */; };
+		2C23CC9D17875CB4CA254B871B030F57 /* CodeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78401E9A57B4D4A905D91AE20E6C7D2F /* CodeSystem.swift */; };
+		2C87DF329280AE6D43B04E186DC3FBA3 /* BiologicallyDerivedProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA1222A238FA636747B4DA904181339 /* BiologicallyDerivedProduct.swift */; };
+		2D53A7D2B9DEFFDE5A8A94B28C98D347 /* PatientListOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BBBC60D574080EC7ADF7584321A9EC /* PatientListOrder.swift */; };
+		33F422C06D410EE1739E0F9F3B93130B /* FHIRAbstractBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673EB09C2E56683A421D246AAC893854 /* FHIRAbstractBase.swift */; };
+		3427C2D09F27778C10ECDC9953A057F5 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F29C5A2DDA8B7EBF71B0C56499B0B /* Slot.swift */; };
+		351BC998A22E9EAF6FCC5006824DE142 /* SMART-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB3ADBBCBDBCB29B802DCBCD949B3C4 /* SMART-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3614B943AD6AE6448B9B45A855366AED /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E53F61DD64B7AC10833BB6C6122328 /* Invoice.swift */; };
+		379E4B0E6260497D1EAE3C8F22773727 /* DomainResource+Containment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A435362B9F656C1DED78B34CD1C6E4A /* DomainResource+Containment.swift */; };
+		38B082EA925E3C7C38B4A3B6C3E52048 /* Evidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBD8E01F4F2F0609702CDB712855492 /* Evidence.swift */; };
+		399E1492CE5EF321916A9423E771CBCA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66966635C67674FDF8F9521FFC6BDD6 /* Location.swift */; };
+		3B99E410877FB7493A6AB2337C320BF7 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C1377660C8B10376C3F72986F4B57 /* Period.swift */; };
+		3C1527B3D5279F853BD7B5B3C6A4031A /* RiskEvidenceSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B49BE4D6BF071EE974AD12818E3881 /* RiskEvidenceSynthesis.swift */; };
+		3C177A37EF322EFADF93D33C06BA2822 /* Pods-EHealthInnovation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 084EB11932BAECD1FD5A63A87DE2239E /* Pods-EHealthInnovation-dummy.m */; };
+		3CE9B1F0DEF2B4C66127CA43E79CEB62 /* AllergyIntolerance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBC6762EE7B126DFD7CB58A3C9916C4 /* AllergyIntolerance.swift */; };
+		3E0C83B53E25BC9C06ECA8A3163F52F0 /* SubstanceSourceMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655A5AB1F63348A8F515E612E03E926 /* SubstanceSourceMaterial.swift */; };
+		3E15FED79AD6DAACA642B5C87653889A /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663F75870421992E6A6E531645F0364 /* Medication.swift */; };
+		3EF9F89113FB9401079E2DFAEA1B95F6 /* Claim.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A3664729C87BBA38B9A7D67B0F482 /* Claim.swift */; };
+		402B97222C6FE3297F2737BBF15B444B /* OAuth2KeychainAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107F9F094DB7E53033F0DA723A6A683 /* OAuth2KeychainAccount.swift */; };
+		40644712A150B28DE694F7F6B24E8D6C /* OAuth2Authorizer+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93379D9614318318D295DB0EF88FBA90 /* OAuth2Authorizer+iOS.swift */; };
+		420696F8D51AEB908F2668DEB265AB3E /* OAuth2AuthorizerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929D4297793C325923428BA7FE514E5 /* OAuth2AuthorizerUI.swift */; };
+		430BDE81CF9EE9BAA31ACA28503993B2 /* RequestGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF20CFBE59B345953D858A6C3C67A53E /* RequestGroup.swift */; };
+		468EBCABAD39DD001B0CEE3AB55A4971 /* FHIRServerDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A1C53995ED8072E4ACF536B08E881 /* FHIRServerDataResponse.swift */; };
+		48C25DC13931C87F22C01DA26C346A69 /* GuidanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C088876DA3DE7C7CF97DCF0903395AF /* GuidanceResponse.swift */; };
+		498185163AF2DFBE56B608ACCA813C96 /* Encounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42F7B710C2E330D0397461BDAE6A44 /* Encounter.swift */; };
+		49A42894F175EA0CD6E39170A573DEE0 /* MarketingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F9B9DBE2255B83E1975F864AFAC6C /* MarketingStatus.swift */; };
+		4AE0C2F2D8FA5747DBC68D2FFF94206A /* FHIRInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC98874C71D2F25D37166119EF1F2C2 /* FHIRInteger.swift */; };
+		4D1B843A29C31C675D22237C6CF45AB7 /* InsurancePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED8AF8AA43C8AFBA5EA70087E9525F /* InsurancePlan.swift */; };
+		4DEB029727B010C17D83486B0128895C /* Resource+REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC212F1CA3AA04104136B85A0AFFF56 /* Resource+REST.swift */; };
+		507822842D37B260B0619BF4591E57C6 /* OAuth2Securable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CC00C04741A244A61AA709853719C /* OAuth2Securable.swift */; };
+		51C858D5A5418095054CC439F6A9FD7A /* ValueSet+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90ED398663B48A5E761781E56BC8BA /* ValueSet+Localization.swift */; };
+		532AA4299FD603F664324D3D1B1956AF /* FHIRServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5934F9CFF141747DED8AD617512FA2DD /* FHIRServerResponse.swift */; };
+		5360A427C355AC3BACDBCAA8F8EB8EBE /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA467E88C56325F71EDC7F627927BC0B /* Meta.swift */; };
+		53F7F4247F61E4EDC8B8B73095E3C437 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109028953ECE9E491BD408983A85AE2 /* Group.swift */; };
+		542DB3AF5B29FF2400E4F2817A9252C0 /* MedicinalProductManufactured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9B14ED2A29DE30C94051000955D18 /* MedicinalProductManufactured.swift */; };
+		5488A51B527F66124929CA525FEC2221 /* OAuth2CustomAuthorizer+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E9A45C71D5373A33D7068707F0E739 /* OAuth2CustomAuthorizer+iOS.swift */; };
+		5494294DE33AB56AAD2CB11D79D90F7A /* ResearchStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1247789AC325ED5F6060EBE0E952702 /* ResearchStudy.swift */; };
+		566E01AF517BBE19C8B923A0D4E8B38D /* Reference+Resolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BA1994433FD027B5C1287640FAB0F /* Reference+Resolving.swift */; };
+		567F7F2ACA609CE32C8899E456CF8A58 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9678802E5E9D7D3FB39BDA9C5932F /* Coding.swift */; };
+		569D98D52F33D3697723AB69D7197350 /* OAuth2Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = C744751F78086D8A99F05276C7EFA114 /* OAuth2Base.swift */; };
+		572B5ACE44CB2DEC64C67F7FD42F1F4C /* MedicinalProductContraindication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06667F61E7F80A697168B1BA88D4353D /* MedicinalProductContraindication.swift */; };
+		58DC5622C1DB21B8FB64D361A9CA900D /* MedicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1047387ED5E33BB1EA12A366A9684F15 /* MedicationRequest.swift */; };
+		5A8810E955FC0807D1F938DDAB19666B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6316132B69037B29FC0BD2B77CA18F51 /* Bundle.swift */; };
+		5EB9F3A74CDB345D2E6DF00CE82AA7F3 /* DataRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A788B98AAB2ADB4B333716A0249CD3 /* DataRequirement.swift */; };
+		60CD60A8289B0DCEFADE115293373F68 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6317B3083AF8552F7A9F381F5375D18 /* Distance.swift */; };
+		6204A795F3C9F409AB163E342978F0AB /* MedicinalProductUndesirableEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6588884B9B0CD26978370614191CDBF6 /* MedicinalProductUndesirableEffect.swift */; };
+		63110BF021872A676F8D9759ACE07238 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC9FF2CB99209BDC0C0592DC24C30F1 /* extensions.swift */; };
+		63CD64D76BC55A11FAEA778858116715 /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2DFB4E00B0366E999EF9D88B5863E2 /* Binary.swift */; };
+		64F9B67764D635CEDD524EDD15A6FB36 /* FHIRValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057345E9D005F1991404B4E49C84C907 /* FHIRValidationError.swift */; };
+		67FC638BC3368ED758343044E6B43863 /* DiagnosticReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1101268A541BB67E8FCFE9137102DF7 /* DiagnosticReport.swift */; };
+		6BE77FDB873828DDAFC8A9F47DB96856 /* FHIRDecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BF1AD003A4ABCABDF7C1C21D7F07B0 /* FHIRDecimal.swift */; };
+		6C6512E1C3773E054882075B70221091 /* CarePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41059DFC152BC68863C39E84BD4C082 /* CarePlan.swift */; };
+		6D7FE7B7267E9CF349858674E5F4F8BA /* QuestionnaireResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64073EB99860960DDA5D23B3BF7A458 /* QuestionnaireResponse.swift */; };
+		6DB436CECA8D6B03285F3B7968DBB9C0 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7AE7FDBEAAF55CB377C60095B8127C /* Parameters.swift */; };
+		6E902C39792813B505A95ABEA464C51D /* OAuth2Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C468F55BCFFED6ECC2620AD5F48BA7 /* OAuth2Logger.swift */; };
+		6F7EDCF2D2B7A993CBA628FCC65D17D7 /* FHIRRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D6333CF5938ACE36753F6EE5054778 /* FHIRRequestHandler.swift */; };
+		71486D31DA394C0F1DA3A9BDE8335BE9 /* OAuth2CodeGrantNoTokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C12A3D7566A3B49058398E117D43A /* OAuth2CodeGrantNoTokenType.swift */; };
+		73171F381067F6C1CB38D127594D266A /* DateAndTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A296702BBB541905FFCA71B32D8A /* DateAndTime.swift */; };
+		732F6C3F075A341DF1BCFB85C2DB59AA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DC5204E6546CB12BD92DE1DD1F512 /* List.swift */; };
+		75D448FBD53B749D20709E8D55D56718 /* PractitionerRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A9CECCAD29397CEA2C20644015DA9 /* PractitionerRole.swift */; };
+		76D7B724187C4E6789B70E5AEF736DE3 /* AuditEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607A3D81CBD2AEAA1AC5E4EEE824395E /* AuditEvent.swift */; };
+		77179A0716342C59353D04C0F82FF5DA /* OrganizationAffiliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15A87D554C3E2F9CDFCCED21A94660 /* OrganizationAffiliation.swift */; };
+		77CCBBB35FA8C1B235BEFDFEBEA89B44 /* DomainResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F62DAFF14ECE9C429B2D26DCB60DAF /* DomainResource.swift */; };
+		77EFF7F311472642BB38D2CBF2B6B7C4 /* HealthcareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F64C8A6519C7DDBE44CEE1D621140 /* HealthcareService.swift */; };
+		78E8432D63AE9464C5AF6FCA4B59FC09 /* ClinicalImpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A71982102B34F653E73C0FCCAD65C /* ClinicalImpression.swift */; };
+		7903C3554DB95110D628707ABC837D52 /* PatientListQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73DCEAFEE4CAF49E511603BB3E6C51 /* PatientListQuery.swift */; };
+		79CD7E1EF8F3838F06ACCF300EE67411 /* MolecularSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC349C758C456A3597890A36D877A80 /* MolecularSequence.swift */; };
+		7B7C72D3DF115BDCC96159C4AD03DFBF /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2047A3D56C3BB1B0F990383B3251A1F /* Money.swift */; };
+		7B7E4EA21571EB598CDD00E703225BA8 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51D21DBE0DDD069A96ED5FA523CE80 /* Resource.swift */; };
+		7BD61A5778132C05493568095098A2AF /* SubstanceNucleicAcid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B7C01E655B7A7026412163730A6DD /* SubstanceNucleicAcid.swift */; };
+		7C8A8C74E7A22497F1BC5D9EA913F01A /* FHIRAbstractResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FD34DC17793236B95AFD87D4BD6D80 /* FHIRAbstractResource.swift */; };
+		7CE32F92ABB15139026D3160A48E7B07 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C15CA7F359F9B75A54FDDDDC28F9A /* Contract.swift */; };
+		7D4A9F5F4D595B891AFFF97380105C29 /* PaymentReconciliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3A3D27B07663E2EF2195EDE32E3B9 /* PaymentReconciliation.swift */; };
+		7E43736A36EDD3FECE42D49B403E0EAF /* DocumentReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A843EDCCDAA0A3E37C05E96126DBFFD /* DocumentReference.swift */; };
+		7EC7B5D2666E3DB55364703926F0A7B5 /* EnrollmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F18A9A8697CC23C858C2E5B3138724 /* EnrollmentRequest.swift */; };
+		7F0688967A564128EFDFDBB9EFE9B576 /* CompartmentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331BCCF8378C9FCEDF8C1DACCBD1A9C8 /* CompartmentDefinition.swift */; };
+		80764C118CCC816F3EF9D756E81398FC /* UsageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BC07B2FFE1B675E608B68C094285D8 /* UsageContext.swift */; };
+		8169DD1739FF63E2069F99957BF4012A /* OAuth2Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20659C21A4426839518760B5AEE18B9 /* OAuth2Response.swift */; };
+		824BC6129118CB7FFAF0ABA064B7AD9C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDDAFA430C414A95252B1FCA3B153D /* Account.swift */; };
+		82833CBFFB583135E66DA22D9C4E920B /* OAuth2DebugURLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B606BCEDEADDE7681FB28BABB559B /* OAuth2DebugURLSessionDelegate.swift */; };
+		82A61F393B2DFAD900D1845066783C35 /* DetectedIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B59527270D874913B31C8932B5347 /* DetectedIssue.swift */; };
+		82D1FD7086949F6F2ADA1FEE1210B57D /* MedicationAdministration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCFFD7E6F3AB43ADE3CF3B63AF49F56 /* MedicationAdministration.swift */; };
+		830C8A58CBD78259339619A4940974C1 /* Resource+Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43753399E02AB8548779F259C90DBD7F /* Resource+Meta.swift */; };
+		83443720B625445A9B385A4B704343B8 /* TriggerDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD783B4F536FD67EC0C80C365AF1A61D /* TriggerDefinition.swift */; };
+		84139B09CF94DABD7118B29FD3A195C9 /* ProdCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE50FA215073BAAB65446EF742A1AC /* ProdCharacteristic.swift */; };
+		8415FBA802865B18993E592F04B02072 /* MedicinalProductPharmaceutical.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DEE30857268EF6B773B84EDAFCA57B /* MedicinalProductPharmaceutical.swift */; };
+		8495B634AFE0BEB9F873FD38FCC6B913 /* OAuth2ClientCredentialsReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAA578499772BB4F6D3CD5D85F42A5 /* OAuth2ClientCredentialsReddit.swift */; };
+		858207595B722EC6127CE5CA329025D5 /* EpisodeOfCare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD34FFD0BB3DE34CB8AF9428440A13C /* EpisodeOfCare.swift */; };
+		86B8FD5F2070825A4AA83CD5CEC290CE /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F962A4FF97B758B3214ACD9672E37 /* ContactDetail.swift */; };
+		87D5485AA902589D46C45D1F59973163 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92873CF0CAD2B9A30331076E8780E969 /* Keychain.swift */; };
+		880FAF2D6B79290C4431F8EA3A60CE9C /* OAuth2AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362790D98636D59282766A5EB75FDDA /* OAuth2AuthRequest.swift */; };
+		8880D3D77B0C68E2A2F79FF18A9BC343 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79675EA1D31B20DF58C7D9C63DB3E5 /* Organization.swift */; };
+		8968AE786F524959A41688382D9F9847 /* ImplementationGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8687B8F1CC21B35BD6E9267AF77D9260 /* ImplementationGuide.swift */; };
+		89B09ECA5686347A03F4BD1FF8798601 /* SupplyDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421CE8E5E76CA047571A0172C898C6B /* SupplyDelivery.swift */; };
+		8A49DBC0A73404E8333055EA19216AA9 /* SampledData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E453075252A20B7C6B403102B98DD8 /* SampledData.swift */; };
+		8C709D1EEEB75FCBE3BC0D5A2416C00C /* FHIRSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF2E24654B70F37A3D8EA7AE861C12 /* FHIRSearch.swift */; };
+		8CA0B0E868393BD54C280E741FDDCA29 /* MedicinalProductIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5607C5D807EECB3CC10C1CE5DD7C18C /* MedicinalProductIngredient.swift */; };
+		8D458999F04878006040306FD2721407 /* OAuth2CustomAuthorizerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E8DC1F78C7DD5A32033CB76D9689E /* OAuth2CustomAuthorizerUI.swift */; };
+		8F1CF405051B9E23B1A6029369BA298B /* CodeableConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50957D9E7408A9FA73C35821CD5D18BF /* CodeableConcept.swift */; };
+		8F8D5836C96B53E833FA7566028C3824 /* Quantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C33895E0699865EC1EB86440E901DB /* Quantity.swift */; };
+		902FA7AC05846A372F93DADBA144412D /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDC1753976E0D91F895D52BC907B91 /* Population.swift */; };
+		904610B7377BF158774D17F1D437BF01 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E8D004028CEFB588315A26BB72D5D3 /* Annotation.swift */; };
+		9164BA284D33B384E9DAA885477E1701 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED543FA131C3A6D0272FCD930B4474D /* Schedule.swift */; };
+		9190A45B1834FE5CBF54984A2097AA5D /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4CDFB043E54C7159721CAEC195BA2F /* Signature.swift */; };
+		91D57402533530A048A6662E4387C6B5 /* Coverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C954CE0CAEFD623F57C1AAE97A2AA /* Coverage.swift */; };
+		925583C10583A41DBC56EED19A5131BB /* OAuth2ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40F08F98E6445ED0DB05BDE7010D8D /* OAuth2ClientConfig.swift */; };
+		92F1FDCF5B59BE0B9882B053C7804A32 /* StructureDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E1725E80F5F6461530371C682D541 /* StructureDefinition.swift */; };
+		95000F2BC04FBC4FF1961234ABB655D9 /* MedicationDispense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A519CD0620D127FE987123E95B85EA7B /* MedicationDispense.swift */; };
+		957F3FD6A0D7C564407F951A665860BF /* SubstanceSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410E0988A2CE1ECBF6693B5AF771433 /* SubstanceSpecification.swift */; };
+		9686FAC654244FD0BC63B3F0E83CEFDA /* NamingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78392DB50C26B6CC230CEB2BEE93E7DC /* NamingSystem.swift */; };
+		970555509403134BE301F174DEB29F47 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F65E2E0C70361E0475AB602F6BC0B7 /* Person.swift */; };
+		978309B414D851F8E1ADF35B1C403A59 /* FHIRString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000F3AB4CEB5566370FFD9377C500BC /* FHIRString.swift */; };
+		98CFA06FA511AE06564D62420E164C5F /* TerminologyCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FCA9E1538D676E5B08F79BC8D5CDA1 /* TerminologyCapabilities.swift */; };
+		9B0A4AD539A20811776F0BB01E0AC8A7 /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D70E9EBF26808F53A496119F5F34E24 /* Procedure.swift */; };
+		9C36BCC1ACED5FA74AF8C389ECDD96C5 /* VisionPrescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0C0D786C6FB8E99C0622C64B44F27 /* VisionPrescription.swift */; };
+		9D9506C5EAE0C8FF77D5399E3D1737C9 /* TestReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED5E4FD0DAE38E9D8D42F23FD02E29 /* TestReport.swift */; };
+		9E7A2442A06BC7961D4C2D21BF062108 /* MedicationKnowledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13D0AED82D1B27A5FF5A691C6303EA /* MedicationKnowledge.swift */; };
+		9E7BDBD88E542BEC82CBE8D28C51C067 /* Base64Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B79864B1D9187323B8302D597B6B3 /* Base64Binary.swift */; };
+		A003687B44E54ECD91801CBCA386B54C /* Narrative.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1335CE15E6A9F25D1A864B66FB35731 /* Narrative.swift */; };
+		A09EFBB06AEA79DA27236CECD7AC81F9 /* ExampleScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276E94C529DFB1E1E82EA8F70D91B80 /* ExampleScenario.swift */; };
+		A19F2726DF624082BA53519EDDD97F90 /* DeviceUseStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C57E3904C43CC8E155458E4E8419B /* DeviceUseStatement.swift */; };
+		A2E812B480627EE495F800BB16C0829F /* PatientList+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30542F37324343440AA1CAC8300C25C2 /* PatientList+iOS.swift */; };
+		A33B0EE60E60A3D0BE236D67E89B890E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5E2ABB189C23BD11ADA8ECC7010D3 /* Task.swift */; };
+		A341A242F2870070053093DF473F9BB8 /* FHIRServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075F3D82F6369EA94DD9FCC0D481533 /* FHIRServer.swift */; };
+		A3D3CB35AAC25DE1ED27E4B3FD78BCF8 /* Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90DD614B8961198DF1CCEE6DA78BD0D /* Composition.swift */; };
+		A417D78F31C8F4A62D98A803754F0C4E /* OAuth2ImplicitGrantWithQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A57D753CFF7A9B6D315A8390DD68C9 /* OAuth2ImplicitGrantWithQueryParams.swift */; };
+		A47DCACD21D987BD94DE8D2FD128AA18 /* EnrollmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E0943B81E9104AC3883B4F14E0E179 /* EnrollmentResponse.swift */; };
+		A535A1CD54B9E0B14A3D2BEAD8D1FB0C /* RelatedArtifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA39F36FBC04C1F5885AE9F5C3F9273 /* RelatedArtifact.swift */; };
+		A5A86178C81DF4E5F8752AF184D1DDB6 /* NutritionOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7BD02D9AF098A93AEB1EADAB4A45A /* NutritionOrder.swift */; };
+		A733E0C830826774ECA0E6F92785CD39 /* Pods-EHealthInnovationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 638EF462DF0E733D5AF83B664892878D /* Pods-EHealthInnovationTests-dummy.m */; };
+		A7A4342E53317A7373EECAD5AE9965E7 /* EventDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31045D6202ECC32223A32235C85DDDB5 /* EventDefinition.swift */; };
+		A7D17C45F335788BC075BADDAF1FCEF5 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE75E1A427CE7AC3DC4BED257A04B1 /* Reference.swift */; };
+		A92577A3213B877B6EEC5CA847C38744 /* SearchParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F35514706A9B8AF999D7E8365F3807 /* SearchParameter.swift */; };
+		A96543EEFE44F9F586E0AD518F9F5832 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39A4F5E2D59BDC3AE6BC0818D0FC64 /* Media.swift */; };
+		A9950558E5A450BC40E2C8D7D4A57C20 /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F8E6D5BC87683EB30CD00F36F4561C /* VerificationResult.swift */; };
+		A99EB59928B50EB19B1E7AACB1EA0796 /* EvidenceVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5387459DB9B31F449A4BBB0943B9D8CF /* EvidenceVariable.swift */; };
+		ABDF391C638F97D78DF9593CD4CE37CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AD9773A473436455C915E915C970ACFE /* FamilyMemberHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDE457782A742D368E90004BBB7BA22 /* FamilyMemberHistory.swift */; };
+		AF3CAEF99B0FA3370FC0485B57088A03 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA028F8AE16DA068575B340E5FED51 /* Observation.swift */; };
+		AFF913B7E591C3390F6DE645B55825B3 /* SubstanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1750521AA80DC7B41AE0D090FADAACF /* SubstanceAmount.swift */; };
+		B13BC03C4A752E862861B87A47C18AAF /* SupplyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5D4DF6006037809157FED90F6EA1C /* SupplyRequest.swift */; };
+		B13F944ECB2FEF6E5B851DA3F7DA26DE /* Immunization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951046EE6CC40CC60CFEADE591C42E27 /* Immunization.swift */; };
+		B15307DD8EF36F4B0D1426A2D8E75BBC /* AdverseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486EAE9AFBE94AC3A1F068CAEDA840F /* AdverseEvent.swift */; };
+		B155B39FE8521C86C21D88D26A642339 /* CoverageEligibilityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD319BF05BCD722EEFB2D59335F4C87 /* CoverageEligibilityResponse.swift */; };
+		B367BEB330BE8270E625229575709D19 /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C043E6FD96675A189889820A151EEE /* Timing.swift */; };
+		B4CB513F9EA725F672F43996281DE22D /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB371FC5A54369F03BCC0BFF85873D54 /* Measure.swift */; };
+		BB51FEE515933EAF1A4FE339D825B360 /* FHIRBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B06113E9B5C7A25A357334601751B1 /* FHIRBool.swift */; };
+		BB541E65CA1902C32C2BE1F4BE81B9D2 /* AppointmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CDFE7B93F5B4C264A9851CAA9A3854 /* AppointmentResponse.swift */; };
+		BC12F0686B4D3BB3ACAB58651F5227BE /* Pods-EHealthInnovation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D00D765649DF949FD08830B1691F3D /* Pods-EHealthInnovation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE122DDA7AB9DC5F413F691D6C6FAEAB /* BodyStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218708C6E4626972F57869A9C3788B30 /* BodyStructure.swift */; };
+		C0BF550131B3753F229719C47865BCFB /* PatientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4420422D558AEC9153F5889B16AF2 /* PatientList.swift */; };
+		C0F821F2A2EB6B86C35AEE93ACCE1035 /* CoverageEligibilityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B7B631C27356A0D737EB6FEEB748B /* CoverageEligibilityRequest.swift */; };
+		C2242C0499FD03CC990C963336DF0D8A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DBEA7338A2BD06FBA897E1923448AE /* Endpoint.swift */; };
+		C2AEDFD07E90E29B3364358C295677ED /* OperationOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C79E33CF6A46E0CE2446EB8DB459C /* OperationOutcome.swift */; };
+		C31A0FC2EBA23B887E8410942D302D54 /* ContactPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3655ACFB8337633288722C575FAA81 /* ContactPoint.swift */; };
+		C35147A1144AB4A489CFA159E8FD9509 /* MessageDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5027049CBA99294CD711B0779414787 /* MessageDefinition.swift */; };
+		C61535B681F6A1B222927402D14B5E62 /* Substance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8CBB2A77351AE87FE4208A69B6C363 /* Substance.swift */; };
+		C6937AC48856F477BB42D0766A76CE17 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F519838A776923B57241D7C35234102C /* Patient.swift */; };
+		C97EBB33696AC5029915FB6CFC41F1FD /* Questionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A524DF44F8982228AAA170306C51C /* Questionnaire.swift */; };
+		CAD6DC84889A52A2283A8C4A8A32632A /* CapabilityStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C9D96AED3FD01CD950F5C67B093DF /* CapabilityStatement.swift */; };
+		CD35D2A36669FBA915517EBE244EA693 /* PaymentNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BC245CA11A6A9AFDDB536E90EB3F07 /* PaymentNotice.swift */; };
+		CD52D5F9843D3138C04EF43585968E74 /* OAuth2WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07E49A2379CA7A5483B38EED62165F7 /* OAuth2WebViewController.swift */; };
+		CD9C3EE3FA662A35BE822E2710644995 /* Auth+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40C176E48FE7E2E7E2416D24DCCF09 /* Auth+iOS.swift */; };
+		CDC802098C6935C888F4AA0274F3673A /* MedicinalProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD763453151E8EF59C62D10C2C44D2B /* MedicinalProduct.swift */; };
+		CEFBFB01F0713558E4B1942238958F75 /* FHIROperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6DDE61CDA5CB9D90A42A0BDF369E9A /* FHIROperation.swift */; };
+		CF8D579FC47B51F487A4CC3AC08A2A29 /* OAuth2Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A88600BA9B43C9FDB24A6F40E01706 /* OAuth2Error.swift */; };
+		D1D6208E47909AE991A01C7FE9B1D593 /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8081821C7C8416D4885CD7E982523D2 /* Basic.swift */; };
+		D20B4030D8D1FA0272FFF9CA398F7AEE /* DeviceMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C5466B9DF03FB80767CB9C0EC4A10 /* DeviceMetric.swift */; };
+		D25A32E9E5F770A7BC3A0C3B0C73BC13 /* ResearchSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1DEF38BD66D485D2B05669449A7E2E /* ResearchSubject.swift */; };
+		D2B7402760FF602E98943CE2B575C32F /* OAuth2DynReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D3E1B3614CF26D4F8611B3D2BFB94 /* OAuth2DynReg.swift */; };
+		D43DDD5D5A452F33DFB313CFA87390EE /* MessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377010D3E6062623DD399A3CC4A57A40 /* MessageHeader.swift */; };
+		D565C6477CBEB3B4687119BB8DDC0577 /* MedicationStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C93B208AE1D1DEC26234F877BF9E1 /* MedicationStatement.swift */; };
+		D6A5193B59E38C901A8BD1E5F197C080 /* Element+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7211A0B25E6DE37D6A21FE5FF14198 /* Element+Extensions.swift */; };
+		D6FE813FEA987FD350F1E54FE8FBE0F5 /* EffectEvidenceSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBAD46AD90482D03799384394AD1001 /* EffectEvidenceSynthesis.swift */; };
+		D742CD5685E3470D463AD5469D2E8896 /* StructureMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9298DDE44F0E220E70DAA071D71BF /* StructureMap.swift */; };
+		D74409F132BD3B51F28A89278BF64B71 /* MedicinalProductPackaged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D2FF2530815EB06C04837BCF006A /* MedicinalProductPackaged.swift */; };
+		D983ADA37EBFADAAF35F03C3FE4E6E63 /* FHIRAbstractBase+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C8C4D9511488ADB993B16F1A1304C /* FHIRAbstractBase+Factory.swift */; };
+		DA1849683A01CBF503296C8519159A1A /* ProductShelfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C087F4AC426197E91E2376ED3FD6CBA /* ProductShelfLife.swift */; };
+		DD1A5718AF3F810CE69190B61EDAE171 /* ChargeItemDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A75D4F4898FB32E65B86747D8CF9A7 /* ChargeItemDefinition.swift */; };
+		DE001C187E8611651D3E70EEE61BD4CA /* ImmunizationRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829326E1D5F1A65F598B174CC6964CE4 /* ImmunizationRecommendation.swift */; };
+		DE7E695D6A792E97A79EC1E0359F0AFA /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B385843B52057D4529611F2694605 /* Server.swift */; };
+		DEE3E2E73D520E4DBE13A81708050BDB /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E632D993E1DFD5E0723D39C5DD6197 /* Flag.swift */; };
+		DFCE318606FB18EFA82FEABF4D72EACB /* FHIREnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7507DD009D21977E105EB10ED3D5FD5 /* FHIREnum.swift */; };
+		E03C5C1D1DFB170CA854183EC845259C /* TestScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F45ABDC79D141FFBB71759F285351A /* TestScript.swift */; };
+		E29D11F0F130C45EAD9DBC6F42AB771E /* CatalogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168295A95D6E656C7B1B897D53B72EB /* CatalogEntry.swift */; };
+		E2A49E37E1EFD7D44792C68BB7B5ABFF /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C53303A8CD09D7A6F63AA17050D4A /* Age.swift */; };
+		E3D0C013BE4F4E8D03BC910215A7CC38 /* ResearchDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B854B143B231060D9491855AF3D81 /* ResearchDefinition.swift */; };
+		E3FCD528C2044B9FA85A1CFC0FF41EB0 /* ValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A6D99A896E3BD2422C9C971783C4 /* ValueSet.swift */; };
+		E412F5CE1758823EA829E78F69146669 /* OAuth2AuthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1E40BD3E0B94E9F47380DC1B5AEC9 /* OAuth2AuthConfig.swift */; };
+		E450D2EF6ED82A4A83F74950CC8928AC /* OAuth2RequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE1BD3EB28277A5411E8F77DDED31B /* OAuth2RequestPerformer.swift */; };
+		E51CFDD2A73A414EB4A65894127709A1 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F780EC60A00B8A9E2AAF1354EA8D65B /* Library.swift */; };
+		E5DC0963019573E828E8615A80BC75ED /* ResearchElementDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F14829B982F37F819C71BF16B5AB0 /* ResearchElementDefinition.swift */; };
+		E74080C2010EB228E4B84B4CCF9EEFAB /* BackboneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96076D64CB7083A8881117C778BE3FC /* BackboneElement.swift */; };
+		E7BDF87579F9013C9F3320510736207A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BBF6D8E1B3E503FD599F08F267427A /* Extension.swift */; };
+		EAC15EC168CC17C771360EE0872B5C1B /* Practitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B91337C5571A51C8FCEBA2FD2DE637 /* Practitioner.swift */; };
+		EBC441F934BEBA3EA257B4B1DA9C34F0 /* Pods-EHealthInnovationTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA541E93591850836112B2F2502DBB1 /* Pods-EHealthInnovationTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD76B16EE89519F7EF6AB9E5B552D6B /* FHIRPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E3B966E240EA87041D3A011C051D55 /* FHIRPrimitive.swift */; };
+		EDD7361B6AF0E4B4792AA2F7BAC4FC1C /* Dosage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2337538F9859BBEAAF0F0A6DB62A412 /* Dosage.swift */; };
+		EE954DFD789B77BE39E98EC849B29C7C /* SubstancePolymer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB92694B2DC6BCC1AA91674874C6DA /* SubstancePolymer.swift */; };
+		F2B7BC6EB2F07558B0E8D2A22DB8ACC8 /* FHIRString+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF5A2E54E4C447A0DAB3EFE404E562F /* FHIRString+Localization.swift */; };
+		F34FC778B29EEAC1217329931977E18B /* GraphDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7851754D5DD134AD067AC92B96E518 /* GraphDefinition.swift */; };
+		F37CADC12ABE1F83DEF24CB41CB32DC5 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272980DD126F111A0ECA974A2CFAA3E /* Ratio.swift */; };
+		F47067913167329722D7CE7C8E4D6D6A /* PlanDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082771E08531CA782DC002966307816 /* PlanDefinition.swift */; };
+		F4BCBFAB340566FBD42FE08553AF6214 /* OperationDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD95CA70CAB298FEE0E9BF3EC084EF /* OperationDefinition.swift */; };
+		F4C1EC3ED905B316E52733DE00C02026 /* ActivityDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C11CF9E3FF5EB8C3D7ACDAC123F0458 /* ActivityDefinition.swift */; };
+		F57FED5E187F6F6F3EAD08C764EE2505 /* OAuth2CodeGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA6A2F9687EF0969444031607DC486 /* OAuth2CodeGrant.swift */; };
+		F5AE36BC62A773258C88E7C01E4A50FF /* FHIRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF995E94CBC88AF7DFAF312E444E55 /* FHIRError.swift */; };
+		F5C6BBD82AA53A569B427B76742BC4D6 /* OAuth2PasswordGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7901C4640164F78029A4C901CD23B3 /* OAuth2PasswordGrant.swift */; };
+		F82B79A38302ABA918DC7AE89A690395 /* HumanName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB4B88BD5CD7623CE7946B4057C7E8 /* HumanName.swift */; };
+		F930C866D1B7F2B2087C5105D5AAEC12 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41510B5F075BF00C6ACB64AFC3A63A91 /* Condition.swift */; };
+		FB55A034196EA97A32D8DDF9F1751923 /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0792719B80F55A930F93DAB4F95D16EE /* Count.swift */; };
+		FBFC58AFDFAAC1DB36B359B9B3081841 /* Resource+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA364D5D21922CCD0DC95654AC0930E /* Resource+Operation.swift */; };
+		FC404C51F5E4BA19917F84F1C27E61D3 /* OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4455BBA8E881BBB5AE81A0B15E334FF /* OAuth2.swift */; };
+		FCED8F368C772EFF19694AAA0EC8BD1C /* OAuth2CodeGrantFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280B76A7149DF9E9A7FB9B333719A73D /* OAuth2CodeGrantFacebook.swift */; };
+		FF7882D93F6AE0488691DCB8647011EA /* SubstanceReferenceInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142446DAA6CDEAEE841E774020C3C02B /* SubstanceReferenceInformation.swift */; };
+		FF7BEA9438AD4F705AB67959AEE8F7D1 /* Linkage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C711B4B17E0E4E6F59F14034B3255E5C /* Linkage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A0C246C8BD6A4C467EBC2F47224F52C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53505E3ACE46F88A79F24402BC62CBA;
+			remoteInfo = SMART;
+		};
+		A5FB4A58644C6AA0C7350BCD105CC620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53505E3ACE46F88A79F24402BC62CBA;
+			remoteInfo = SMART;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0421CE8E5E76CA047571A0172C898C6B /* SupplyDelivery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplyDelivery.swift; path = "Swift-FHIR/Sources/Models/SupplyDelivery.swift"; sourceTree = "<group>"; };
+		04B91337C5571A51C8FCEBA2FD2DE637 /* Practitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Practitioner.swift; path = "Swift-FHIR/Sources/Models/Practitioner.swift"; sourceTree = "<group>"; };
+		053C1377660C8B10376C3F72986F4B57 /* Period.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Period.swift; path = "Swift-FHIR/Sources/Models/Period.swift"; sourceTree = "<group>"; };
+		057345E9D005F1991404B4E49C84C907 /* FHIRValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRValidationError.swift; path = "Swift-FHIR/Sources/Models/FHIRValidationError.swift"; sourceTree = "<group>"; };
+		059A1C53995ED8072E4ACF536B08E881 /* FHIRServerDataResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRServerDataResponse.swift; path = "Swift-FHIR/Sources/Client/FHIRServerDataResponse.swift"; sourceTree = "<group>"; };
+		06667F61E7F80A697168B1BA88D4353D /* MedicinalProductContraindication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductContraindication.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductContraindication.swift"; sourceTree = "<group>"; };
+		0792719B80F55A930F93DAB4F95D16EE /* Count.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Count.swift; path = "Swift-FHIR/Sources/Models/Count.swift"; sourceTree = "<group>"; };
+		084EB11932BAECD1FD5A63A87DE2239E /* Pods-EHealthInnovation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EHealthInnovation-dummy.m"; sourceTree = "<group>"; };
+		0A5D552CDB5D3FC58F665C751C8DC0EF /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = "Swift-FHIR/Sources/Models/Element.swift"; sourceTree = "<group>"; };
+		0ACEADA1C3ABA012177D4433536587E4 /* RiskAssessment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RiskAssessment.swift; path = "Swift-FHIR/Sources/Models/RiskAssessment.swift"; sourceTree = "<group>"; };
+		0E51D21DBE0DDD069A96ED5FA523CE80 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = "Swift-FHIR/Sources/Models/Resource.swift"; sourceTree = "<group>"; };
+		0F1D3E1B3614CF26D4F8611B3D2BFB94 /* OAuth2DynReg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DynReg.swift; path = OAuth2/Sources/Flows/OAuth2DynReg.swift; sourceTree = "<group>"; };
+		0F6DDE61CDA5CB9D90A42A0BDF369E9A /* FHIROperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIROperation.swift; path = "Swift-FHIR/Sources/Client/FHIROperation.swift"; sourceTree = "<group>"; };
+		1000F3AB4CEB5566370FFD9377C500BC /* FHIRString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRString.swift; path = "Swift-FHIR/Sources/Models/FHIRString.swift"; sourceTree = "<group>"; };
+		1047387ED5E33BB1EA12A366A9684F15 /* MedicationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationRequest.swift; path = "Swift-FHIR/Sources/Models/MedicationRequest.swift"; sourceTree = "<group>"; };
+		12F3E7AC528BD59E9F75998D46A66589 /* Pods-EHealthInnovation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EHealthInnovation.debug.xcconfig"; sourceTree = "<group>"; };
+		12F9B14ED2A29DE30C94051000955D18 /* MedicinalProductManufactured.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductManufactured.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductManufactured.swift"; sourceTree = "<group>"; };
+		133C8C4D9511488ADB993B16F1A1304C /* FHIRAbstractBase+Factory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FHIRAbstractBase+Factory.swift"; path = "Swift-FHIR/Sources/Models/FHIRAbstractBase+Factory.swift"; sourceTree = "<group>"; };
+		142446DAA6CDEAEE841E774020C3C02B /* SubstanceReferenceInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubstanceReferenceInformation.swift; path = "Swift-FHIR/Sources/Models/SubstanceReferenceInformation.swift"; sourceTree = "<group>"; };
+		14681C1F28A546C8197DB8E8E0C4C9F2 /* ObservationDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservationDefinition.swift; path = "Swift-FHIR/Sources/Models/ObservationDefinition.swift"; sourceTree = "<group>"; };
+		1496090B63516E6E2657D26EB6B957AD /* Specimen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Specimen.swift; path = "Swift-FHIR/Sources/Models/Specimen.swift"; sourceTree = "<group>"; };
+		19438004044999F667C6392C00C32FFE /* OAuth2ImplicitGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ImplicitGrant.swift; path = OAuth2/Sources/Flows/OAuth2ImplicitGrant.swift; sourceTree = "<group>"; };
+		198FD3A4C8203F30F329344EE0C14C0D /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = "Swift-FHIR/Sources/Models/Duration.swift"; sourceTree = "<group>"; };
+		1A435362B9F656C1DED78B34CD1C6E4A /* DomainResource+Containment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DomainResource+Containment.swift"; path = "Swift-FHIR/Sources/Client/DomainResource+Containment.swift"; sourceTree = "<group>"; };
+		1A9737A1AFE4D04EDA693368FC9845F5 /* FHIRURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRURL.swift; path = "Swift-FHIR/Sources/Models/FHIRURL.swift"; sourceTree = "<group>"; };
+		1AC52CFFF1AA22EE9A0ADF415998E9BB /* ClaimResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClaimResponse.swift; path = "Swift-FHIR/Sources/Models/ClaimResponse.swift"; sourceTree = "<group>"; };
+		1ACF995E94CBC88AF7DFAF312E444E55 /* FHIRError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRError.swift; path = "Swift-FHIR/Sources/Models/FHIRError.swift"; sourceTree = "<group>"; };
+		1B40F08F98E6445ED0DB05BDE7010D8D /* OAuth2ClientConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientConfig.swift; path = OAuth2/Sources/Base/OAuth2ClientConfig.swift; sourceTree = "<group>"; };
+		1C1C5466B9DF03FB80767CB9C0EC4A10 /* DeviceMetric.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceMetric.swift; path = "Swift-FHIR/Sources/Models/DeviceMetric.swift"; sourceTree = "<group>"; };
+		1C7851754D5DD134AD067AC92B96E518 /* GraphDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphDefinition.swift; path = "Swift-FHIR/Sources/Models/GraphDefinition.swift"; sourceTree = "<group>"; };
+		1CB3ADBBCBDBCB29B802DCBCD949B3C4 /* SMART-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMART-umbrella.h"; sourceTree = "<group>"; };
+		1D7C954CE0CAEFD623F57C1AAE97A2AA /* Coverage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coverage.swift; path = "Swift-FHIR/Sources/Models/Coverage.swift"; sourceTree = "<group>"; };
+		1F7901C4640164F78029A4C901CD23B3 /* OAuth2PasswordGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2PasswordGrant.swift; path = OAuth2/Sources/Flows/OAuth2PasswordGrant.swift; sourceTree = "<group>"; };
+		1F928B5EB738F815C4A0F6561CE1553A /* MedicinalProductInteraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductInteraction.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductInteraction.swift"; sourceTree = "<group>"; };
+		20E4AE4D97D9DC807E545F89921989C5 /* OAuth2CodeGrantAzure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantAzure.swift; path = OAuth2/Sources/Flows/OAuth2CodeGrantAzure.swift; sourceTree = "<group>"; };
+		214B7B631C27356A0D737EB6FEEB748B /* CoverageEligibilityRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverageEligibilityRequest.swift; path = "Swift-FHIR/Sources/Models/CoverageEligibilityRequest.swift"; sourceTree = "<group>"; };
+		2175DB40563CAC90D2C0BBAA9D7570F4 /* Pods-EHealthInnovation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EHealthInnovation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		218708C6E4626972F57869A9C3788B30 /* BodyStructure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyStructure.swift; path = "Swift-FHIR/Sources/Models/BodyStructure.swift"; sourceTree = "<group>"; };
+		21931CA355B9E5666D098D3088AB11B6 /* Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Address.swift; path = "Swift-FHIR/Sources/Models/Address.swift"; sourceTree = "<group>"; };
+		2272980DD126F111A0ECA974A2CFAA3E /* Ratio.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ratio.swift; path = "Swift-FHIR/Sources/Models/Ratio.swift"; sourceTree = "<group>"; };
+		22A75D4F4898FB32E65B86747D8CF9A7 /* ChargeItemDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChargeItemDefinition.swift; path = "Swift-FHIR/Sources/Models/ChargeItemDefinition.swift"; sourceTree = "<group>"; };
+		25B49BE4D6BF071EE974AD12818E3881 /* RiskEvidenceSynthesis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RiskEvidenceSynthesis.swift; path = "Swift-FHIR/Sources/Models/RiskEvidenceSynthesis.swift"; sourceTree = "<group>"; };
+		271CFEFC230857162646D4C625B721B5 /* Consent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Consent.swift; path = "Swift-FHIR/Sources/Models/Consent.swift"; sourceTree = "<group>"; };
+		27F18A9A8697CC23C858C2E5B3138724 /* EnrollmentRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnrollmentRequest.swift; path = "Swift-FHIR/Sources/Models/EnrollmentRequest.swift"; sourceTree = "<group>"; };
+		280B76A7149DF9E9A7FB9B333719A73D /* OAuth2CodeGrantFacebook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantFacebook.swift; path = OAuth2/Sources/Flows/OAuth2CodeGrantFacebook.swift; sourceTree = "<group>"; };
+		280C79E33CF6A46E0CE2446EB8DB459C /* OperationOutcome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationOutcome.swift; path = "Swift-FHIR/Sources/Models/OperationOutcome.swift"; sourceTree = "<group>"; };
+		29E53F61DD64B7AC10833BB6C6122328 /* Invoice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Invoice.swift; path = "Swift-FHIR/Sources/Models/Invoice.swift"; sourceTree = "<group>"; };
+		2B0E8DC1F78C7DD5A32033CB76D9689E /* OAuth2CustomAuthorizerUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CustomAuthorizerUI.swift; path = OAuth2/Sources/Base/OAuth2CustomAuthorizerUI.swift; sourceTree = "<group>"; };
+		2C087F4AC426197E91E2376ED3FD6CBA /* ProductShelfLife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductShelfLife.swift; path = "Swift-FHIR/Sources/Models/ProductShelfLife.swift"; sourceTree = "<group>"; };
+		2CD34FFD0BB3DE34CB8AF9428440A13C /* EpisodeOfCare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EpisodeOfCare.swift; path = "Swift-FHIR/Sources/Models/EpisodeOfCare.swift"; sourceTree = "<group>"; };
+		2FBC6762EE7B126DFD7CB58A3C9916C4 /* AllergyIntolerance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllergyIntolerance.swift; path = "Swift-FHIR/Sources/Models/AllergyIntolerance.swift"; sourceTree = "<group>"; };
+		303B606BCEDEADDE7681FB28BABB559B /* OAuth2DebugURLSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DebugURLSessionDelegate.swift; path = OAuth2/Sources/Base/OAuth2DebugURLSessionDelegate.swift; sourceTree = "<group>"; };
+		30542F37324343440AA1CAC8300C25C2 /* PatientList+iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PatientList+iOS.swift"; path = "Sources/iOS/PatientList+iOS.swift"; sourceTree = "<group>"; };
+		31045D6202ECC32223A32235C85DDDB5 /* EventDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventDefinition.swift; path = "Swift-FHIR/Sources/Models/EventDefinition.swift"; sourceTree = "<group>"; };
+		320B79864B1D9187323B8302D597B6B3 /* Base64Binary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64Binary.swift; path = "Swift-FHIR/Sources/Models/Base64Binary.swift"; sourceTree = "<group>"; };
+		324F9B9DBE2255B83E1975F864AFAC6C /* MarketingStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarketingStatus.swift; path = "Swift-FHIR/Sources/Models/MarketingStatus.swift"; sourceTree = "<group>"; };
+		331BAF2DBA1A1641C453643F8F1E06B9 /* OAuth2Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Requestable.swift; path = OAuth2/Sources/Base/OAuth2Requestable.swift; sourceTree = "<group>"; };
+		331BCCF8378C9FCEDF8C1DACCBD1A9C8 /* CompartmentDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompartmentDefinition.swift; path = "Swift-FHIR/Sources/Models/CompartmentDefinition.swift"; sourceTree = "<group>"; };
+		339B854B143B231060D9491855AF3D81 /* ResearchDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResearchDefinition.swift; path = "Swift-FHIR/Sources/Models/ResearchDefinition.swift"; sourceTree = "<group>"; };
+		34A788B98AAB2ADB4B333716A0249CD3 /* DataRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRequirement.swift; path = "Swift-FHIR/Sources/Models/DataRequirement.swift"; sourceTree = "<group>"; };
+		377010D3E6062623DD399A3CC4A57A40 /* MessageHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageHeader.swift; path = "Swift-FHIR/Sources/Models/MessageHeader.swift"; sourceTree = "<group>"; };
+		38E3B966E240EA87041D3A011C051D55 /* FHIRPrimitive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRPrimitive.swift; path = "Swift-FHIR/Sources/Models/FHIRPrimitive.swift"; sourceTree = "<group>"; };
+		38EE75E1A427CE7AC3DC4BED257A04B1 /* Reference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reference.swift; path = "Swift-FHIR/Sources/Models/Reference.swift"; sourceTree = "<group>"; };
+		3A4B5102F2BEB8D23BBB1D2002675343 /* ExplanationOfBenefit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExplanationOfBenefit.swift; path = "Swift-FHIR/Sources/Models/ExplanationOfBenefit.swift"; sourceTree = "<group>"; };
+		3C52D2FF2530815EB06C04837BCF006A /* MedicinalProductPackaged.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductPackaged.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductPackaged.swift"; sourceTree = "<group>"; };
+		3D5C3C34C6A08FB47874E0443C318BDC /* Auth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth.swift; path = Sources/Client/Auth.swift; sourceTree = "<group>"; };
+		3E79675EA1D31B20DF58C7D9C63DB3E5 /* Organization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Organization.swift; path = "Swift-FHIR/Sources/Models/Organization.swift"; sourceTree = "<group>"; };
+		3F40C176E48FE7E2E7E2416D24DCCF09 /* Auth+iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Auth+iOS.swift"; path = "Sources/iOS/Auth+iOS.swift"; sourceTree = "<group>"; };
+		41510B5F075BF00C6ACB64AFC3A63A91 /* Condition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = "Swift-FHIR/Sources/Models/Condition.swift"; sourceTree = "<group>"; };
+		43753399E02AB8548779F259C90DBD7F /* Resource+Meta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Resource+Meta.swift"; path = "Swift-FHIR/Sources/Models/Resource+Meta.swift"; sourceTree = "<group>"; };
+		43C9678802E5E9D7D3FB39BDA9C5932F /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = "Swift-FHIR/Sources/Models/Coding.swift"; sourceTree = "<group>"; };
+		455D4116732099C3FE6E7083DDD81B4A /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = "Swift-FHIR/Sources/Models/Range.swift"; sourceTree = "<group>"; };
+		47A7D3A468AF1EA207008B509F749F71 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = "Swift-FHIR/Sources/Models/Device.swift"; sourceTree = "<group>"; };
+		48FE50FA215073BAAB65446EF742A1AC /* ProdCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProdCharacteristic.swift; path = "Swift-FHIR/Sources/Models/ProdCharacteristic.swift"; sourceTree = "<group>"; };
+		4929D4297793C325923428BA7FE514E5 /* OAuth2AuthorizerUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthorizerUI.swift; path = OAuth2/Sources/Base/OAuth2AuthorizerUI.swift; sourceTree = "<group>"; };
+		493ED6744929DA2816FC786C98F00E6D /* Pods_EHealthInnovationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EHealthInnovationTests.framework; path = "Pods-EHealthInnovationTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C088876DA3DE7C7CF97DCF0903395AF /* GuidanceResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuidanceResponse.swift; path = "Swift-FHIR/Sources/Models/GuidanceResponse.swift"; sourceTree = "<group>"; };
+		4C8F3E6937043AF753B77A180E5293CA /* Pods-EHealthInnovationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EHealthInnovationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D15A87D554C3E2F9CDFCCED21A94660 /* OrganizationAffiliation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrganizationAffiliation.swift; path = "Swift-FHIR/Sources/Models/OrganizationAffiliation.swift"; sourceTree = "<group>"; };
+		4D3555C82AF3A49E41DCE69937A165BB /* DeviceDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceDefinition.swift; path = "Swift-FHIR/Sources/Models/DeviceDefinition.swift"; sourceTree = "<group>"; };
+		4EA1222A238FA636747B4DA904181339 /* BiologicallyDerivedProduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BiologicallyDerivedProduct.swift; path = "Swift-FHIR/Sources/Models/BiologicallyDerivedProduct.swift"; sourceTree = "<group>"; };
+		4F39A4F5E2D59BDC3AE6BC0818D0FC64 /* Media.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Media.swift; path = "Swift-FHIR/Sources/Models/Media.swift"; sourceTree = "<group>"; };
+		4F4C57E3904C43CC8E155458E4E8419B /* DeviceUseStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceUseStatement.swift; path = "Swift-FHIR/Sources/Models/DeviceUseStatement.swift"; sourceTree = "<group>"; };
+		4FF4928A0485026EE82758B833EC272B /* ElementDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementDefinition.swift; path = "Swift-FHIR/Sources/Models/ElementDefinition.swift"; sourceTree = "<group>"; };
+		50083DFA7316F3F20FA0C028B8FA9677 /* Pods-EHealthInnovationTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EHealthInnovationTests-Info.plist"; sourceTree = "<group>"; };
+		50957D9E7408A9FA73C35821CD5D18BF /* CodeableConcept.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeableConcept.swift; path = "Swift-FHIR/Sources/Models/CodeableConcept.swift"; sourceTree = "<group>"; };
+		52C1E40BD3E0B94E9F47380DC1B5AEC9 /* OAuth2AuthConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthConfig.swift; path = OAuth2/Sources/Base/OAuth2AuthConfig.swift; sourceTree = "<group>"; };
+		5387459DB9B31F449A4BBB0943B9D8CF /* EvidenceVariable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EvidenceVariable.swift; path = "Swift-FHIR/Sources/Models/EvidenceVariable.swift"; sourceTree = "<group>"; };
+		5410E0988A2CE1ECBF6693B5AF771433 /* SubstanceSpecification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubstanceSpecification.swift; path = "Swift-FHIR/Sources/Models/SubstanceSpecification.swift"; sourceTree = "<group>"; };
+		54FDC1753976E0D91F895D52BC907B91 /* Population.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Population.swift; path = "Swift-FHIR/Sources/Models/Population.swift"; sourceTree = "<group>"; };
+		55FF2E24654B70F37A3D8EA7AE861C12 /* FHIRSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRSearch.swift; path = "Swift-FHIR/Sources/Client/FHIRSearch.swift"; sourceTree = "<group>"; };
+		56FD34DC17793236B95AFD87D4BD6D80 /* FHIRAbstractResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRAbstractResource.swift; path = "Swift-FHIR/Sources/Models/FHIRAbstractResource.swift"; sourceTree = "<group>"; };
+		58E632D993E1DFD5E0723D39C5DD6197 /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = "Swift-FHIR/Sources/Models/Flag.swift"; sourceTree = "<group>"; };
+		5934F9CFF141747DED8AD617512FA2DD /* FHIRServerResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRServerResponse.swift; path = "Swift-FHIR/Sources/Models/FHIRServerResponse.swift"; sourceTree = "<group>"; };
+		597E1725E80F5F6461530371C682D541 /* StructureDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructureDefinition.swift; path = "Swift-FHIR/Sources/Models/StructureDefinition.swift"; sourceTree = "<group>"; };
+		5D4CFBA07BC4BFE589356545E81AA32A /* Pods-EHealthInnovationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EHealthInnovationTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DDC12BD2FF8D65729D37A238BFA8AAC /* MedicinalProductIndication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductIndication.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductIndication.swift"; sourceTree = "<group>"; };
+		5F54B01428D8480273B69D80839436AF /* SMART.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SMART.release.xcconfig; sourceTree = "<group>"; };
+		5F874D5628806F95BC06742B40A8F166 /* OAuth2CodeGrantLinkedIn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantLinkedIn.swift; path = OAuth2/Sources/Flows/OAuth2CodeGrantLinkedIn.swift; sourceTree = "<group>"; };
+		607A3D81CBD2AEAA1AC5E4EEE824395E /* AuditEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuditEvent.swift; path = "Swift-FHIR/Sources/Models/AuditEvent.swift"; sourceTree = "<group>"; };
+		61BBBC60D574080EC7ADF7584321A9EC /* PatientListOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatientListOrder.swift; path = Sources/Client/PatientListOrder.swift; sourceTree = "<group>"; };
+		6222CACC7A9F0FD9C3427EAF90820CF1 /* ChargeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChargeItem.swift; path = "Swift-FHIR/Sources/Models/ChargeItem.swift"; sourceTree = "<group>"; };
+		62E9A45C71D5373A33D7068707F0E739 /* OAuth2CustomAuthorizer+iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OAuth2CustomAuthorizer+iOS.swift"; path = "OAuth2/Sources/iOS/OAuth2CustomAuthorizer+iOS.swift"; sourceTree = "<group>"; };
+		6316132B69037B29FC0BD2B77CA18F51 /* Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bundle.swift; path = "Swift-FHIR/Sources/Models/Bundle.swift"; sourceTree = "<group>"; };
+		638EF462DF0E733D5AF83B664892878D /* Pods-EHealthInnovationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EHealthInnovationTests-dummy.m"; sourceTree = "<group>"; };
+		658254479D65A799EDC9B85E3D7C17CC /* SubstanceProtein.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubstanceProtein.swift; path = "Swift-FHIR/Sources/Models/SubstanceProtein.swift"; sourceTree = "<group>"; };
+		6588884B9B0CD26978370614191CDBF6 /* MedicinalProductUndesirableEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductUndesirableEffect.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductUndesirableEffect.swift"; sourceTree = "<group>"; };
+		673EB09C2E56683A421D246AAC893854 /* FHIRAbstractBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRAbstractBase.swift; path = "Swift-FHIR/Sources/Models/FHIRAbstractBase.swift"; sourceTree = "<group>"; };
+		67F65E2E0C70361E0475AB602F6BC0B7 /* Person.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Person.swift; path = "Swift-FHIR/Sources/Models/Person.swift"; sourceTree = "<group>"; };
+		69E8D004028CEFB588315A26BB72D5D3 /* Annotation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Annotation.swift; path = "Swift-FHIR/Sources/Models/Annotation.swift"; sourceTree = "<group>"; };
+		6A843EDCCDAA0A3E37C05E96126DBFFD /* DocumentReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentReference.swift; path = "Swift-FHIR/Sources/Models/DocumentReference.swift"; sourceTree = "<group>"; };
+		6B42F7B710C2E330D0397461BDAE6A44 /* Encounter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encounter.swift; path = "Swift-FHIR/Sources/Models/Encounter.swift"; sourceTree = "<group>"; };
+		6BC9FF2CB99209BDC0C0592DC24C30F1 /* extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = extensions.swift; path = OAuth2/Sources/Base/extensions.swift; sourceTree = "<group>"; };
+		6C7AE7FDBEAAF55CB377C60095B8127C /* Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = "Swift-FHIR/Sources/Models/Parameters.swift"; sourceTree = "<group>"; };
+		6C82A6D99A896E3BD2422C9C971783C4 /* ValueSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueSet.swift; path = "Swift-FHIR/Sources/Models/ValueSet.swift"; sourceTree = "<group>"; };
+		6CC349C758C456A3597890A36D877A80 /* MolecularSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MolecularSequence.swift; path = "Swift-FHIR/Sources/Models/MolecularSequence.swift"; sourceTree = "<group>"; };
+		6D1DEF38BD66D485D2B05669449A7E2E /* ResearchSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResearchSubject.swift; path = "Swift-FHIR/Sources/Models/ResearchSubject.swift"; sourceTree = "<group>"; };
+		6D70E9EBF26808F53A496119F5F34E24 /* Procedure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Procedure.swift; path = "Swift-FHIR/Sources/Models/Procedure.swift"; sourceTree = "<group>"; };
+		6DFA6A2F9687EF0969444031607DC486 /* OAuth2CodeGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrant.swift; path = OAuth2/Sources/Flows/OAuth2CodeGrant.swift; sourceTree = "<group>"; };
+		6E4CDFB043E54C7159721CAEC195BA2F /* Signature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signature.swift; path = "Swift-FHIR/Sources/Models/Signature.swift"; sourceTree = "<group>"; };
+		6EC98874C71D2F25D37166119EF1F2C2 /* FHIRInteger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRInteger.swift; path = "Swift-FHIR/Sources/Models/FHIRInteger.swift"; sourceTree = "<group>"; };
+		7075F3D82F6369EA94DD9FCC0D481533 /* FHIRServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRServer.swift; path = "Swift-FHIR/Sources/Models/FHIRServer.swift"; sourceTree = "<group>"; };
+		711E47132B4A92D7E65BA7D4D68BCD3A /* SMART-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SMART-Info.plist"; sourceTree = "<group>"; };
+		71BF1AD003A4ABCABDF7C1C21D7F07B0 /* FHIRDecimal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRDecimal.swift; path = "Swift-FHIR/Sources/Models/FHIRDecimal.swift"; sourceTree = "<group>"; };
+		72E5D4DF6006037809157FED90F6EA1C /* SupplyRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplyRequest.swift; path = "Swift-FHIR/Sources/Models/SupplyRequest.swift"; sourceTree = "<group>"; };
+		72FAA578499772BB4F6D3CD5D85F42A5 /* OAuth2ClientCredentialsReddit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientCredentialsReddit.swift; path = OAuth2/Sources/Flows/OAuth2ClientCredentialsReddit.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7362790D98636D59282766A5EB75FDDA /* OAuth2AuthRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthRequest.swift; path = OAuth2/Sources/Base/OAuth2AuthRequest.swift; sourceTree = "<group>"; };
+		75DDDAFA430C414A95252B1FCA3B153D /* Account.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Account.swift; path = "Swift-FHIR/Sources/Models/Account.swift"; sourceTree = "<group>"; };
+		775BA25B23F02309C806ECA2F297D23B /* Appointment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Appointment.swift; path = "Swift-FHIR/Sources/Models/Appointment.swift"; sourceTree = "<group>"; };
+		78392DB50C26B6CC230CEB2BEE93E7DC /* NamingSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamingSystem.swift; path = "Swift-FHIR/Sources/Models/NamingSystem.swift"; sourceTree = "<group>"; };
+		78401E9A57B4D4A905D91AE20E6C7D2F /* CodeSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeSystem.swift; path = "Swift-FHIR/Sources/Models/CodeSystem.swift"; sourceTree = "<group>"; };
+		78C33895E0699865EC1EB86440E901DB /* Quantity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Quantity.swift; path = "Swift-FHIR/Sources/Models/Quantity.swift"; sourceTree = "<group>"; };
+		79E0943B81E9104AC3883B4F14E0E179 /* EnrollmentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnrollmentResponse.swift; path = "Swift-FHIR/Sources/Models/EnrollmentResponse.swift"; sourceTree = "<group>"; };
+		7A7A8F747AF754938845ADA1174335A7 /* CommunicationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommunicationRequest.swift; path = "Swift-FHIR/Sources/Models/CommunicationRequest.swift"; sourceTree = "<group>"; };
+		7BA541E93591850836112B2F2502DBB1 /* Pods-EHealthInnovationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EHealthInnovationTests-umbrella.h"; sourceTree = "<group>"; };
+		7C11CF9E3FF5EB8C3D7ACDAC123F0458 /* ActivityDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityDefinition.swift; path = "Swift-FHIR/Sources/Models/ActivityDefinition.swift"; sourceTree = "<group>"; };
+		80139983E8DF9E22A016C7DBF8A465B4 /* MeasureReport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeasureReport.swift; path = "Swift-FHIR/Sources/Models/MeasureReport.swift"; sourceTree = "<group>"; };
+		80D599E97AD93174C9F03C3D9C7C0CC9 /* SMART-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMART-prefix.pch"; sourceTree = "<group>"; };
+		8107F9F094DB7E53033F0DA723A6A683 /* OAuth2KeychainAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2KeychainAccount.swift; path = OAuth2/Sources/Base/OAuth2KeychainAccount.swift; sourceTree = "<group>"; };
+		8168295A95D6E656C7B1B897D53B72EB /* CatalogEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogEntry.swift; path = "Swift-FHIR/Sources/Models/CatalogEntry.swift"; sourceTree = "<group>"; };
+		81F35514706A9B8AF999D7E8365F3807 /* SearchParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchParameter.swift; path = "Swift-FHIR/Sources/Models/SearchParameter.swift"; sourceTree = "<group>"; };
+		821F64C8A6519C7DDBE44CEE1D621140 /* HealthcareService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HealthcareService.swift; path = "Swift-FHIR/Sources/Models/HealthcareService.swift"; sourceTree = "<group>"; };
+		8276E94C529DFB1E1E82EA8F70D91B80 /* ExampleScenario.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleScenario.swift; path = "Swift-FHIR/Sources/Models/ExampleScenario.swift"; sourceTree = "<group>"; };
+		829326E1D5F1A65F598B174CC6964CE4 /* ImmunizationRecommendation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmunizationRecommendation.swift; path = "Swift-FHIR/Sources/Models/ImmunizationRecommendation.swift"; sourceTree = "<group>"; };
+		8486EAE9AFBE94AC3A1F068CAEDA840F /* AdverseEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdverseEvent.swift; path = "Swift-FHIR/Sources/Models/AdverseEvent.swift"; sourceTree = "<group>"; };
+		84AD8D738F964E717D0A5484A82D6FCF /* Contributor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contributor.swift; path = "Swift-FHIR/Sources/Models/Contributor.swift"; sourceTree = "<group>"; };
+		8594B889088BA2E8192C49D081DA3551 /* Communication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Communication.swift; path = "Swift-FHIR/Sources/Models/Communication.swift"; sourceTree = "<group>"; };
+		8687B8F1CC21B35BD6E9267AF77D9260 /* ImplementationGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImplementationGuide.swift; path = "Swift-FHIR/Sources/Models/ImplementationGuide.swift"; sourceTree = "<group>"; };
+		868DC5204E6546CB12BD92DE1DD1F512 /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = "Swift-FHIR/Sources/Models/List.swift"; sourceTree = "<group>"; };
+		86A4420422D558AEC9153F5889B16AF2 /* PatientList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatientList.swift; path = Sources/Client/PatientList.swift; sourceTree = "<group>"; };
+		87411F3E79E6879D8DD45A8F0CB54B1B /* Pods-EHealthInnovation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EHealthInnovation-frameworks.sh"; sourceTree = "<group>"; };
+		88939276971E3F64D8B04A86E2373FBC /* FHIRType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRType.swift; path = "Swift-FHIR/Sources/Models/FHIRType.swift"; sourceTree = "<group>"; };
+		88D0A3D87A601C86679D50516B07E87D /* SpecimenDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpecimenDefinition.swift; path = "Swift-FHIR/Sources/Models/SpecimenDefinition.swift"; sourceTree = "<group>"; };
+		8A4B59527270D874913B31C8932B5347 /* DetectedIssue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectedIssue.swift; path = "Swift-FHIR/Sources/Models/DetectedIssue.swift"; sourceTree = "<group>"; };
+		8AA5E2ABB189C23BD11ADA8ECC7010D3 /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = "Swift-FHIR/Sources/Models/Task.swift"; sourceTree = "<group>"; };
+		8D2DFB4E00B0366E999EF9D88B5863E2 /* Binary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Binary.swift; path = "Swift-FHIR/Sources/Models/Binary.swift"; sourceTree = "<group>"; };
+		8D3A71982102B34F653E73C0FCCAD65C /* ClinicalImpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClinicalImpression.swift; path = "Swift-FHIR/Sources/Models/ClinicalImpression.swift"; sourceTree = "<group>"; };
+		8E73DCEAFEE4CAF49E511603BB3E6C51 /* PatientListQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatientListQuery.swift; path = Sources/Client/PatientListQuery.swift; sourceTree = "<group>"; };
+		8E8CBB2A77351AE87FE4208A69B6C363 /* Substance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Substance.swift; path = "Swift-FHIR/Sources/Models/Substance.swift"; sourceTree = "<group>"; };
+		8F780EC60A00B8A9E2AAF1354EA8D65B /* Library.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Library.swift; path = "Swift-FHIR/Sources/Models/Library.swift"; sourceTree = "<group>"; };
+		908F668ABFB8454ED665CB00C2261740 /* ConceptMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConceptMap.swift; path = "Swift-FHIR/Sources/Models/ConceptMap.swift"; sourceTree = "<group>"; };
+		9109028953ECE9E491BD408983A85AE2 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = "Swift-FHIR/Sources/Models/Group.swift"; sourceTree = "<group>"; };
+		912D78070846BAFECE17ED2BDD603019 /* Subscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Subscription.swift; path = "Swift-FHIR/Sources/Models/Subscription.swift"; sourceTree = "<group>"; };
+		917B385843B52057D4529611F2694605 /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Client/Server.swift; sourceTree = "<group>"; };
+		927C93B208AE1D1DEC26234F877BF9E1 /* MedicationStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationStatement.swift; path = "Swift-FHIR/Sources/Models/MedicationStatement.swift"; sourceTree = "<group>"; };
+		92873CF0CAD2B9A30331076E8780E969 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = OAuth2/SwiftKeychain/Keychain/Keychain.swift; sourceTree = "<group>"; };
+		93379D9614318318D295DB0EF88FBA90 /* OAuth2Authorizer+iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OAuth2Authorizer+iOS.swift"; path = "OAuth2/Sources/iOS/OAuth2Authorizer+iOS.swift"; sourceTree = "<group>"; };
+		93954840DD04F025FEAF6F34A51982A5 /* DocumentManifest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentManifest.swift; path = "Swift-FHIR/Sources/Models/DocumentManifest.swift"; sourceTree = "<group>"; };
+		93C043E6FD96675A189889820A151EEE /* Timing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timing.swift; path = "Swift-FHIR/Sources/Models/Timing.swift"; sourceTree = "<group>"; };
+		944AA23C73EE56CDEE6249812165C88C /* Resource+Instantiation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Resource+Instantiation.swift"; path = "Swift-FHIR/Sources/Client/Resource+Instantiation.swift"; sourceTree = "<group>"; };
+		94F62DAFF14ECE9C429B2D26DCB60DAF /* DomainResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DomainResource.swift; path = "Swift-FHIR/Sources/Models/DomainResource.swift"; sourceTree = "<group>"; };
+		951046EE6CC40CC60CFEADE591C42E27 /* Immunization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Immunization.swift; path = "Swift-FHIR/Sources/Models/Immunization.swift"; sourceTree = "<group>"; };
+		9663F75870421992E6A6E531645F0364 /* Medication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Medication.swift; path = "Swift-FHIR/Sources/Models/Medication.swift"; sourceTree = "<group>"; };
+		96F15E36715462F47437EF1673757BCD /* Pods-EHealthInnovationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EHealthInnovationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		97CDFE7B93F5B4C264A9851CAA9A3854 /* AppointmentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppointmentResponse.swift; path = "Swift-FHIR/Sources/Models/AppointmentResponse.swift"; sourceTree = "<group>"; };
+		99D6333CF5938ACE36753F6EE5054778 /* FHIRRequestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRRequestHandler.swift; path = "Swift-FHIR/Sources/Models/FHIRRequestHandler.swift"; sourceTree = "<group>"; };
+		9D13D0AED82D1B27A5FF5A691C6303EA /* MedicationKnowledge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationKnowledge.swift; path = "Swift-FHIR/Sources/Models/MedicationKnowledge.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E22A296702BBB541905FFCA71B32D8A /* DateAndTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTime.swift; path = "Swift-FHIR/Sources/Models/DateAndTime.swift"; sourceTree = "<group>"; };
+		9E29648F54CDB72EC28CDDD847102C8B /* FHIRMinimalServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRMinimalServer.swift; path = "Swift-FHIR/Sources/Client/FHIRMinimalServer.swift"; sourceTree = "<group>"; };
+		9ED543FA131C3A6D0272FCD930B4474D /* Schedule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = "Swift-FHIR/Sources/Models/Schedule.swift"; sourceTree = "<group>"; };
+		A07E49A2379CA7A5483B38EED62165F7 /* OAuth2WebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2WebViewController.swift; path = OAuth2/Sources/iOS/OAuth2WebViewController.swift; sourceTree = "<group>"; };
+		A1750521AA80DC7B41AE0D090FADAACF /* SubstanceAmount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubstanceAmount.swift; path = "Swift-FHIR/Sources/Models/SubstanceAmount.swift"; sourceTree = "<group>"; };
+		A20659C21A4426839518760B5AEE18B9 /* OAuth2Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Response.swift; path = OAuth2/Sources/Base/OAuth2Response.swift; sourceTree = "<group>"; };
+		A43F14829B982F37F819C71BF16B5AB0 /* ResearchElementDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResearchElementDefinition.swift; path = "Swift-FHIR/Sources/Models/ResearchElementDefinition.swift"; sourceTree = "<group>"; };
+		A519CD0620D127FE987123E95B85EA7B /* MedicationDispense.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationDispense.swift; path = "Swift-FHIR/Sources/Models/MedicationDispense.swift"; sourceTree = "<group>"; };
+		A803163724B7E1E39508BE60D6530F56 /* SMART-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMART-dummy.m"; sourceTree = "<group>"; };
+		A8C221B400C8C506D8B7E99C25E35A45 /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Sources/Client/Client.swift; sourceTree = "<group>"; };
+		A9BD95CA70CAB298FEE0E9BF3EC084EF /* OperationDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationDefinition.swift; path = "Swift-FHIR/Sources/Models/OperationDefinition.swift"; sourceTree = "<group>"; };
+		AA3655ACFB8337633288722C575FAA81 /* ContactPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactPoint.swift; path = "Swift-FHIR/Sources/Models/ContactPoint.swift"; sourceTree = "<group>"; };
+		AA9F29C5A2DDA8B7EBF71B0C56499B0B /* Slot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Slot.swift; path = "Swift-FHIR/Sources/Models/Slot.swift"; sourceTree = "<group>"; };
+		AAC7BD02D9AF098A93AEB1EADAB4A45A /* NutritionOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NutritionOrder.swift; path = "Swift-FHIR/Sources/Models/NutritionOrder.swift"; sourceTree = "<group>"; };
+		AB42B5DBF6AC8BAA49901003EE1FA3FF /* RelatedPerson.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelatedPerson.swift; path = "Swift-FHIR/Sources/Models/RelatedPerson.swift"; sourceTree = "<group>"; };
+		AB76939E0452E8781B8C602C881289B3 /* FHIROpenServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIROpenServer.swift; path = "Swift-FHIR/Sources/Client/FHIROpenServer.swift"; sourceTree = "<group>"; };
+		ABE3A3D27B07663E2EF2195EDE32E3B9 /* PaymentReconciliation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentReconciliation.swift; path = "Swift-FHIR/Sources/Models/PaymentReconciliation.swift"; sourceTree = "<group>"; };
+		ABF8663D798AA3895BE3954ACB6E6171 /* DeviceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceRequest.swift; path = "Swift-FHIR/Sources/Models/DeviceRequest.swift"; sourceTree = "<group>"; };
+		AFCFFD7E6F3AB43ADE3CF3B63AF49F56 /* MedicationAdministration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationAdministration.swift; path = "Swift-FHIR/Sources/Models/MedicationAdministration.swift"; sourceTree = "<group>"; };
+		B0237139B04C5AFD28BB7C778CB9CF1D /* Goal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Goal.swift; path = "Swift-FHIR/Sources/Models/Goal.swift"; sourceTree = "<group>"; };
+		B08CD969E0B24D5048C11654129285D6 /* Pods-EHealthInnovationTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EHealthInnovationTests-frameworks.sh"; sourceTree = "<group>"; };
+		B1BC245CA11A6A9AFDDB536E90EB3F07 /* PaymentNotice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentNotice.swift; path = "Swift-FHIR/Sources/Models/PaymentNotice.swift"; sourceTree = "<group>"; };
+		B2047A3D56C3BB1B0F990383B3251A1F /* Money.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Money.swift; path = "Swift-FHIR/Sources/Models/Money.swift"; sourceTree = "<group>"; };
+		B42F962A4FF97B758B3214ACD9672E37 /* ContactDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactDetail.swift; path = "Swift-FHIR/Sources/Models/ContactDetail.swift"; sourceTree = "<group>"; };
+		B5C48A47B009AD80E88D5D989FCC6A74 /* Pods-EHealthInnovation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EHealthInnovation.release.xcconfig"; sourceTree = "<group>"; };
+		B6F3000B48A81798372E6E8DBDAB0B1E /* SMART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SMART.framework; path = SMART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7507DD009D21977E105EB10ED3D5FD5 /* FHIREnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIREnum.swift; path = "Swift-FHIR/Sources/Models/FHIREnum.swift"; sourceTree = "<group>"; };
+		B93A9CECCAD29397CEA2C20644015DA9 /* PractitionerRole.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PractitionerRole.swift; path = "Swift-FHIR/Sources/Models/PractitionerRole.swift"; sourceTree = "<group>"; };
+		B9919DF546FFD16DA065B8C1913A7D72 /* Patient+SMART.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Patient+SMART.swift"; path = "Swift-FHIR/Sources/Client/Patient+SMART.swift"; sourceTree = "<group>"; };
+		BA3A3664729C87BBA38B9A7D67B0F482 /* Claim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Claim.swift; path = "Swift-FHIR/Sources/Models/Claim.swift"; sourceTree = "<group>"; };
+		BAA39F36FBC04C1F5885AE9F5C3F9273 /* RelatedArtifact.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelatedArtifact.swift; path = "Swift-FHIR/Sources/Models/RelatedArtifact.swift"; sourceTree = "<group>"; };
+		BEBD8E01F4F2F0609702CDB712855492 /* Evidence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Evidence.swift; path = "Swift-FHIR/Sources/Models/Evidence.swift"; sourceTree = "<group>"; };
+		BF20CFBE59B345953D858A6C3C67A53E /* RequestGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestGroup.swift; path = "Swift-FHIR/Sources/Models/RequestGroup.swift"; sourceTree = "<group>"; };
+		BFF5A2E54E4C447A0DAB3EFE404E562F /* FHIRString+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FHIRString+Localization.swift"; path = "Swift-FHIR/Sources/Client/FHIRString+Localization.swift"; sourceTree = "<group>"; };
+		C07CC00C04741A244A61AA709853719C /* OAuth2Securable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Securable.swift; path = OAuth2/Sources/Base/OAuth2Securable.swift; sourceTree = "<group>"; };
+		C0938AF4547BC8ED9857F444AF1ACAC5 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = "Swift-FHIR/Sources/Models/Expression.swift"; sourceTree = "<group>"; };
+		C0B02EF340895BF3A72EF8FC6008EE30 /* Provenance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Provenance.swift; path = "Swift-FHIR/Sources/Models/Provenance.swift"; sourceTree = "<group>"; };
+		C11501D19413028C9032926BB765697B /* OAuth2CodeGrantBasicAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantBasicAuth.swift; path = OAuth2/Sources/Flows/OAuth2CodeGrantBasicAuth.swift; sourceTree = "<group>"; };
+		C2044D5E1B259789751A18815BDA99AB /* ServiceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceRequest.swift; path = "Swift-FHIR/Sources/Models/ServiceRequest.swift"; sourceTree = "<group>"; };
+		C2E9298DDE44F0E220E70DAA071D71BF /* StructureMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructureMap.swift; path = "Swift-FHIR/Sources/Models/StructureMap.swift"; sourceTree = "<group>"; };
+		C2F199A6B183C3D1FF65D7F00FE2AE81 /* CareTeam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CareTeam.swift; path = "Swift-FHIR/Sources/Models/CareTeam.swift"; sourceTree = "<group>"; };
+		C3A88600BA9B43C9FDB24A6F40E01706 /* OAuth2Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Error.swift; path = OAuth2/Sources/Base/OAuth2Error.swift; sourceTree = "<group>"; };
+		C43A524DF44F8982228AAA170306C51C /* Questionnaire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Questionnaire.swift; path = "Swift-FHIR/Sources/Models/Questionnaire.swift"; sourceTree = "<group>"; };
+		C5027049CBA99294CD711B0779414787 /* MessageDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageDefinition.swift; path = "Swift-FHIR/Sources/Models/MessageDefinition.swift"; sourceTree = "<group>"; };
+		C711B4B17E0E4E6F59F14034B3255E5C /* Linkage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Linkage.swift; path = "Swift-FHIR/Sources/Models/Linkage.swift"; sourceTree = "<group>"; };
+		C744751F78086D8A99F05276C7EFA114 /* OAuth2Base.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Base.swift; path = OAuth2/Sources/Base/OAuth2Base.swift; sourceTree = "<group>"; };
+		C7FCA9E1538D676E5B08F79BC8D5CDA1 /* TerminologyCapabilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TerminologyCapabilities.swift; path = "Swift-FHIR/Sources/Models/TerminologyCapabilities.swift"; sourceTree = "<group>"; };
+		C91EC131944BED67C50D0B67F765E1B6 /* Pods-EHealthInnovation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EHealthInnovation-Info.plist"; sourceTree = "<group>"; };
+		C9B5B3CEB10AB024BB94B1C6A06A2EC6 /* Pods-EHealthInnovation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EHealthInnovation.modulemap"; sourceTree = "<group>"; };
+		CB357CF363EBC5DF6FB4BE01B906DA21 /* Pods_EHealthInnovation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EHealthInnovation.framework; path = "Pods-EHealthInnovation.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5BA1994433FD027B5C1287640FAB0F /* Reference+Resolving.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Reference+Resolving.swift"; path = "Swift-FHIR/Sources/Client/Reference+Resolving.swift"; sourceTree = "<group>"; };
+		CD24A533777CFDDDD8C3BCFA1FE04771 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = "Swift-FHIR/Sources/Models/Identifier.swift"; sourceTree = "<group>"; };
+		CEED4AC82F4378E5C2FC99037A998352 /* SMART.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SMART.modulemap; sourceTree = "<group>"; };
+		CEED8AF8AA43C8AFBA5EA70087E9525F /* InsurancePlan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsurancePlan.swift; path = "Swift-FHIR/Sources/Models/InsurancePlan.swift"; sourceTree = "<group>"; };
+		D1101268A541BB67E8FCFE9137102DF7 /* DiagnosticReport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiagnosticReport.swift; path = "Swift-FHIR/Sources/Models/DiagnosticReport.swift"; sourceTree = "<group>"; };
+		D1247789AC325ED5F6060EBE0E952702 /* ResearchStudy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResearchStudy.swift; path = "Swift-FHIR/Sources/Models/ResearchStudy.swift"; sourceTree = "<group>"; };
+		D18A0BE192FAC7766F989F7AE3324660 /* MetadataResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataResource.swift; path = "Swift-FHIR/Sources/Models/MetadataResource.swift"; sourceTree = "<group>"; };
+		D1BBF6D8E1B3E503FD599F08F267427A /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = "Swift-FHIR/Sources/Models/Extension.swift"; sourceTree = "<group>"; };
+		D1DEE30857268EF6B773B84EDAFCA57B /* MedicinalProductPharmaceutical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductPharmaceutical.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductPharmaceutical.swift"; sourceTree = "<group>"; };
+		D2337538F9859BBEAAF0F0A6DB62A412 /* Dosage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dosage.swift; path = "Swift-FHIR/Sources/Models/Dosage.swift"; sourceTree = "<group>"; };
+		D41059DFC152BC68863C39E84BD4C082 /* CarePlan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CarePlan.swift; path = "Swift-FHIR/Sources/Models/CarePlan.swift"; sourceTree = "<group>"; };
+		D42C53303A8CD09D7A6F63AA17050D4A /* Age.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Age.swift; path = "Swift-FHIR/Sources/Models/Age.swift"; sourceTree = "<group>"; };
+		D4B60A4CE1A293E9CD71766666C4831E /* Attachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attachment.swift; path = "Swift-FHIR/Sources/Models/Attachment.swift"; sourceTree = "<group>"; };
+		D4BC07B2FFE1B675E608B68C094285D8 /* UsageContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UsageContext.swift; path = "Swift-FHIR/Sources/Models/UsageContext.swift"; sourceTree = "<group>"; };
+		D5607C5D807EECB3CC10C1CE5DD7C18C /* MedicinalProductIngredient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductIngredient.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductIngredient.swift"; sourceTree = "<group>"; };
+		D5DBEA7338A2BD06FBA897E1923448AE /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = "Swift-FHIR/Sources/Models/Endpoint.swift"; sourceTree = "<group>"; };
+		D66966635C67674FDF8F9521FFC6BDD6 /* Location.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Location.swift; path = "Swift-FHIR/Sources/Models/Location.swift"; sourceTree = "<group>"; };
+		D6C468F55BCFFED6ECC2620AD5F48BA7 /* OAuth2Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Logger.swift; path = OAuth2/Sources/Base/OAuth2Logger.swift; sourceTree = "<group>"; };
+		D6F8E6D5BC87683EB30CD00F36F4561C /* VerificationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerificationResult.swift; path = "Swift-FHIR/Sources/Models/VerificationResult.swift"; sourceTree = "<group>"; };
+		D7A57D753CFF7A9B6D315A8390DD68C9 /* OAuth2ImplicitGrantWithQueryParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ImplicitGrantWithQueryParams.swift; path = OAuth2/Sources/Flows/OAuth2ImplicitGrantWithQueryParams.swift; sourceTree = "<group>"; };
+		D8081821C7C8416D4885CD7E982523D2 /* Basic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Basic.swift; path = "Swift-FHIR/Sources/Models/Basic.swift"; sourceTree = "<group>"; };
+		D96076D64CB7083A8881117C778BE3FC /* BackboneElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackboneElement.swift; path = "Swift-FHIR/Sources/Models/BackboneElement.swift"; sourceTree = "<group>"; };
+		DB371FC5A54369F03BCC0BFF85873D54 /* Measure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Measure.swift; path = "Swift-FHIR/Sources/Models/Measure.swift"; sourceTree = "<group>"; };
+		DBBE1BD3EB28277A5411E8F77DDED31B /* OAuth2RequestPerformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2RequestPerformer.swift; path = OAuth2/Sources/Base/OAuth2RequestPerformer.swift; sourceTree = "<group>"; };
+		DBD763453151E8EF59C62D10C2C44D2B /* MedicinalProduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProduct.swift; path = "Swift-FHIR/Sources/Models/MedicinalProduct.swift"; sourceTree = "<group>"; };
+		DD783B4F536FD67EC0C80C365AF1A61D /* TriggerDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriggerDefinition.swift; path = "Swift-FHIR/Sources/Models/TriggerDefinition.swift"; sourceTree = "<group>"; };
+		DE90ED398663B48A5E761781E56BC8BA /* ValueSet+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ValueSet+Localization.swift"; path = "Swift-FHIR/Sources/Client/ValueSet+Localization.swift"; sourceTree = "<group>"; };
+		DEAC2CCA3A0C6151EAC67BB10F1609F1 /* FHIRRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRRequest.swift; path = "Swift-FHIR/Sources/Models/FHIRRequest.swift"; sourceTree = "<group>"; };
+		DED0C0D786C6FB8E99C0622C64B44F27 /* VisionPrescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisionPrescription.swift; path = "Swift-FHIR/Sources/Models/VisionPrescription.swift"; sourceTree = "<group>"; };
+		DFDE457782A742D368E90004BBB7BA22 /* FamilyMemberHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FamilyMemberHistory.swift; path = "Swift-FHIR/Sources/Models/FamilyMemberHistory.swift"; sourceTree = "<group>"; };
+		E07B7C01E655B7A7026412163730A6DD /* SubstanceNucleicAcid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubstanceNucleicAcid.swift; path = "Swift-FHIR/Sources/Models/SubstanceNucleicAcid.swift"; sourceTree = "<group>"; };
+		E0F11CFBC8F9FEE590A711B5F2319B96 /* CodeSystems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeSystems.swift; path = "Swift-FHIR/Sources/Models/CodeSystems.swift"; sourceTree = "<group>"; };
+		E154EF53EBF0BE712EE9D1AE7D30CD4F /* SMART.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SMART.debug.xcconfig; sourceTree = "<group>"; };
+		E19C9D96AED3FD01CD950F5C67B093DF /* CapabilityStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CapabilityStatement.swift; path = "Swift-FHIR/Sources/Models/CapabilityStatement.swift"; sourceTree = "<group>"; };
+		E2CCA4B2B30B7095A4339CB90373A73E /* Pods-EHealthInnovationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EHealthInnovationTests.modulemap"; sourceTree = "<group>"; };
+		E2E453075252A20B7C6B403102B98DD8 /* SampledData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SampledData.swift; path = "Swift-FHIR/Sources/Models/SampledData.swift"; sourceTree = "<group>"; };
+		E3DB4B88BD5CD7623CE7946B4057C7E8 /* HumanName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HumanName.swift; path = "Swift-FHIR/Sources/Models/HumanName.swift"; sourceTree = "<group>"; };
+		E4455BBA8E881BBB5AE81A0B15E334FF /* OAuth2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2.swift; path = OAuth2/Sources/Flows/OAuth2.swift; sourceTree = "<group>"; };
+		E4B06113E9B5C7A25A357334601751B1 /* FHIRBool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRBool.swift; path = "Swift-FHIR/Sources/Models/FHIRBool.swift"; sourceTree = "<group>"; };
+		E61C12A3D7566A3B49058398E117D43A /* OAuth2CodeGrantNoTokenType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantNoTokenType.swift; path = OAuth2/Sources/Flows/OAuth2CodeGrantNoTokenType.swift; sourceTree = "<group>"; };
+		E64073EB99860960DDA5D23B3BF7A458 /* QuestionnaireResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuestionnaireResponse.swift; path = "Swift-FHIR/Sources/Models/QuestionnaireResponse.swift"; sourceTree = "<group>"; };
+		E66B085D610642800BB221F5C921FDD5 /* Pods-EHealthInnovationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EHealthInnovationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6DCEC8DE6D53EA9C45D2BE639F0FAB6 /* ImmunizationEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmunizationEvaluation.swift; path = "Swift-FHIR/Sources/Models/ImmunizationEvaluation.swift"; sourceTree = "<group>"; };
+		E90DD614B8961198DF1CCEE6DA78BD0D /* Composition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Composition.swift; path = "Swift-FHIR/Sources/Models/Composition.swift"; sourceTree = "<group>"; };
+		EA467E88C56325F71EDC7F627927BC0B /* Meta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Meta.swift; path = "Swift-FHIR/Sources/Models/Meta.swift"; sourceTree = "<group>"; };
+		EAFB92694B2DC6BCC1AA91674874C6DA /* SubstancePolymer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubstancePolymer.swift; path = "Swift-FHIR/Sources/Models/SubstancePolymer.swift"; sourceTree = "<group>"; };
+		EC7211A0B25E6DE37D6A21FE5FF14198 /* Element+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Element+Extensions.swift"; path = "Swift-FHIR/Sources/Client/Element+Extensions.swift"; sourceTree = "<group>"; };
+		EDC212F1CA3AA04104136B85A0AFFF56 /* Resource+REST.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Resource+REST.swift"; path = "Swift-FHIR/Sources/Client/Resource+REST.swift"; sourceTree = "<group>"; };
+		EDD319BF05BCD722EEFB2D59335F4C87 /* CoverageEligibilityResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverageEligibilityResponse.swift; path = "Swift-FHIR/Sources/Models/CoverageEligibilityResponse.swift"; sourceTree = "<group>"; };
+		EEAA028F8AE16DA068575B340E5FED51 /* Observation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observation.swift; path = "Swift-FHIR/Sources/Models/Observation.swift"; sourceTree = "<group>"; };
+		EF1213E8A51F2BBF8F01FC96853ABF6F /* ParameterDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterDefinition.swift; path = "Swift-FHIR/Sources/Models/ParameterDefinition.swift"; sourceTree = "<group>"; };
+		EFD92D8A5834A9022B8CBA9BDFF34D2A /* OAuth2ClientCredentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientCredentials.swift; path = OAuth2/Sources/Flows/OAuth2ClientCredentials.swift; sourceTree = "<group>"; };
+		F082771E08531CA782DC002966307816 /* PlanDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlanDefinition.swift; path = "Swift-FHIR/Sources/Models/PlanDefinition.swift"; sourceTree = "<group>"; };
+		F1335CE15E6A9F25D1A864B66FB35731 /* Narrative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Narrative.swift; path = "Swift-FHIR/Sources/Models/Narrative.swift"; sourceTree = "<group>"; };
+		F519838A776923B57241D7C35234102C /* Patient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = "Swift-FHIR/Sources/Models/Patient.swift"; sourceTree = "<group>"; };
+		F55C15CA7F359F9B75A54FDDDDC28F9A /* Contract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contract.swift; path = "Swift-FHIR/Sources/Models/Contract.swift"; sourceTree = "<group>"; };
+		F6317B3083AF8552F7A9F381F5375D18 /* Distance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distance.swift; path = "Swift-FHIR/Sources/Models/Distance.swift"; sourceTree = "<group>"; };
+		F655A5AB1F63348A8F515E612E03E926 /* SubstanceSourceMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubstanceSourceMaterial.swift; path = "Swift-FHIR/Sources/Models/SubstanceSourceMaterial.swift"; sourceTree = "<group>"; };
+		F7F45ABDC79D141FFBB71759F285351A /* TestScript.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestScript.swift; path = "Swift-FHIR/Sources/Models/TestScript.swift"; sourceTree = "<group>"; };
+		F9D00D765649DF949FD08830B1691F3D /* Pods-EHealthInnovation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EHealthInnovation-umbrella.h"; sourceTree = "<group>"; };
+		FA8654D0928BAE891DC5008F63F99AD5 /* Pods-EHealthInnovation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EHealthInnovation-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCB6862D1CCB64D525814093196CA036 /* MedicinalProductAuthorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicinalProductAuthorization.swift; path = "Swift-FHIR/Sources/Models/MedicinalProductAuthorization.swift"; sourceTree = "<group>"; };
+		FCEB6DAF201B721C95FDEDC2C034008C /* ImagingStudy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagingStudy.swift; path = "Swift-FHIR/Sources/Models/ImagingStudy.swift"; sourceTree = "<group>"; };
+		FDED5E4FD0DAE38E9D8D42F23FD02E29 /* TestReport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestReport.swift; path = "Swift-FHIR/Sources/Models/TestReport.swift"; sourceTree = "<group>"; };
+		FEBAD46AD90482D03799384394AD1001 /* EffectEvidenceSynthesis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EffectEvidenceSynthesis.swift; path = "Swift-FHIR/Sources/Models/EffectEvidenceSynthesis.swift"; sourceTree = "<group>"; };
+		FFA364D5D21922CCD0DC95654AC0930E /* Resource+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Resource+Operation.swift"; path = "Swift-FHIR/Sources/Client/Resource+Operation.swift"; sourceTree = "<group>"; };
+		FFBAD23C5204E996071F866A04A82605 /* FHIRBaseRequestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRBaseRequestHandler.swift; path = "Swift-FHIR/Sources/Client/FHIRBaseRequestHandler.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2376FB1E784FE0C6FEAD65C082EBED53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDF391C638F97D78DF9593CD4CE37CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FF521F0719EDC260771A72DD77E27F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E1CB1DE572CE76072638293CBE60CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68FF7D698F0D1A14273847E51BBBA634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0F9A183F534F938FE252EC927E8477 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		489BF9F7965555C69FF78E7369FD2D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB357CF363EBC5DF6FB4BE01B906DA21 /* Pods_EHealthInnovation.framework */,
+				493ED6744929DA2816FC786C98F00E6D /* Pods_EHealthInnovationTests.framework */,
+				B6F3000B48A81798372E6E8DBDAB0B1E /* SMART.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		582F4B6C08938199BB8DA8D203CF68B1 /* Pods-EHealthInnovation */ = {
+			isa = PBXGroup;
+			children = (
+				C9B5B3CEB10AB024BB94B1C6A06A2EC6 /* Pods-EHealthInnovation.modulemap */,
+				2175DB40563CAC90D2C0BBAA9D7570F4 /* Pods-EHealthInnovation-acknowledgements.markdown */,
+				FA8654D0928BAE891DC5008F63F99AD5 /* Pods-EHealthInnovation-acknowledgements.plist */,
+				084EB11932BAECD1FD5A63A87DE2239E /* Pods-EHealthInnovation-dummy.m */,
+				87411F3E79E6879D8DD45A8F0CB54B1B /* Pods-EHealthInnovation-frameworks.sh */,
+				C91EC131944BED67C50D0B67F765E1B6 /* Pods-EHealthInnovation-Info.plist */,
+				F9D00D765649DF949FD08830B1691F3D /* Pods-EHealthInnovation-umbrella.h */,
+				12F3E7AC528BD59E9F75998D46A66589 /* Pods-EHealthInnovation.debug.xcconfig */,
+				B5C48A47B009AD80E88D5D989FCC6A74 /* Pods-EHealthInnovation.release.xcconfig */,
+			);
+			name = "Pods-EHealthInnovation";
+			path = "Target Support Files/Pods-EHealthInnovation";
+			sourceTree = "<group>";
+		};
+		606D3E638E2DF65E9D925CA4472A78DF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				582F4B6C08938199BB8DA8D203CF68B1 /* Pods-EHealthInnovation */,
+				CDB6177D4B685D45196C34DD367D7E9E /* Pods-EHealthInnovationTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		943873BDA999AAF9B7ABB7DCFC6AB699 /* SMART */ = {
+			isa = PBXGroup;
+			children = (
+				75DDDAFA430C414A95252B1FCA3B153D /* Account.swift */,
+				7C11CF9E3FF5EB8C3D7ACDAC123F0458 /* ActivityDefinition.swift */,
+				21931CA355B9E5666D098D3088AB11B6 /* Address.swift */,
+				8486EAE9AFBE94AC3A1F068CAEDA840F /* AdverseEvent.swift */,
+				D42C53303A8CD09D7A6F63AA17050D4A /* Age.swift */,
+				2FBC6762EE7B126DFD7CB58A3C9916C4 /* AllergyIntolerance.swift */,
+				69E8D004028CEFB588315A26BB72D5D3 /* Annotation.swift */,
+				775BA25B23F02309C806ECA2F297D23B /* Appointment.swift */,
+				97CDFE7B93F5B4C264A9851CAA9A3854 /* AppointmentResponse.swift */,
+				D4B60A4CE1A293E9CD71766666C4831E /* Attachment.swift */,
+				607A3D81CBD2AEAA1AC5E4EEE824395E /* AuditEvent.swift */,
+				3D5C3C34C6A08FB47874E0443C318BDC /* Auth.swift */,
+				3F40C176E48FE7E2E7E2416D24DCCF09 /* Auth+iOS.swift */,
+				D96076D64CB7083A8881117C778BE3FC /* BackboneElement.swift */,
+				320B79864B1D9187323B8302D597B6B3 /* Base64Binary.swift */,
+				D8081821C7C8416D4885CD7E982523D2 /* Basic.swift */,
+				8D2DFB4E00B0366E999EF9D88B5863E2 /* Binary.swift */,
+				4EA1222A238FA636747B4DA904181339 /* BiologicallyDerivedProduct.swift */,
+				218708C6E4626972F57869A9C3788B30 /* BodyStructure.swift */,
+				6316132B69037B29FC0BD2B77CA18F51 /* Bundle.swift */,
+				E19C9D96AED3FD01CD950F5C67B093DF /* CapabilityStatement.swift */,
+				D41059DFC152BC68863C39E84BD4C082 /* CarePlan.swift */,
+				C2F199A6B183C3D1FF65D7F00FE2AE81 /* CareTeam.swift */,
+				8168295A95D6E656C7B1B897D53B72EB /* CatalogEntry.swift */,
+				6222CACC7A9F0FD9C3427EAF90820CF1 /* ChargeItem.swift */,
+				22A75D4F4898FB32E65B86747D8CF9A7 /* ChargeItemDefinition.swift */,
+				BA3A3664729C87BBA38B9A7D67B0F482 /* Claim.swift */,
+				1AC52CFFF1AA22EE9A0ADF415998E9BB /* ClaimResponse.swift */,
+				A8C221B400C8C506D8B7E99C25E35A45 /* Client.swift */,
+				8D3A71982102B34F653E73C0FCCAD65C /* ClinicalImpression.swift */,
+				50957D9E7408A9FA73C35821CD5D18BF /* CodeableConcept.swift */,
+				78401E9A57B4D4A905D91AE20E6C7D2F /* CodeSystem.swift */,
+				E0F11CFBC8F9FEE590A711B5F2319B96 /* CodeSystems.swift */,
+				43C9678802E5E9D7D3FB39BDA9C5932F /* Coding.swift */,
+				8594B889088BA2E8192C49D081DA3551 /* Communication.swift */,
+				7A7A8F747AF754938845ADA1174335A7 /* CommunicationRequest.swift */,
+				331BCCF8378C9FCEDF8C1DACCBD1A9C8 /* CompartmentDefinition.swift */,
+				E90DD614B8961198DF1CCEE6DA78BD0D /* Composition.swift */,
+				908F668ABFB8454ED665CB00C2261740 /* ConceptMap.swift */,
+				41510B5F075BF00C6ACB64AFC3A63A91 /* Condition.swift */,
+				271CFEFC230857162646D4C625B721B5 /* Consent.swift */,
+				B42F962A4FF97B758B3214ACD9672E37 /* ContactDetail.swift */,
+				AA3655ACFB8337633288722C575FAA81 /* ContactPoint.swift */,
+				F55C15CA7F359F9B75A54FDDDDC28F9A /* Contract.swift */,
+				84AD8D738F964E717D0A5484A82D6FCF /* Contributor.swift */,
+				0792719B80F55A930F93DAB4F95D16EE /* Count.swift */,
+				1D7C954CE0CAEFD623F57C1AAE97A2AA /* Coverage.swift */,
+				214B7B631C27356A0D737EB6FEEB748B /* CoverageEligibilityRequest.swift */,
+				EDD319BF05BCD722EEFB2D59335F4C87 /* CoverageEligibilityResponse.swift */,
+				34A788B98AAB2ADB4B333716A0249CD3 /* DataRequirement.swift */,
+				9E22A296702BBB541905FFCA71B32D8A /* DateAndTime.swift */,
+				8A4B59527270D874913B31C8932B5347 /* DetectedIssue.swift */,
+				47A7D3A468AF1EA207008B509F749F71 /* Device.swift */,
+				4D3555C82AF3A49E41DCE69937A165BB /* DeviceDefinition.swift */,
+				1C1C5466B9DF03FB80767CB9C0EC4A10 /* DeviceMetric.swift */,
+				ABF8663D798AA3895BE3954ACB6E6171 /* DeviceRequest.swift */,
+				4F4C57E3904C43CC8E155458E4E8419B /* DeviceUseStatement.swift */,
+				D1101268A541BB67E8FCFE9137102DF7 /* DiagnosticReport.swift */,
+				F6317B3083AF8552F7A9F381F5375D18 /* Distance.swift */,
+				93954840DD04F025FEAF6F34A51982A5 /* DocumentManifest.swift */,
+				6A843EDCCDAA0A3E37C05E96126DBFFD /* DocumentReference.swift */,
+				94F62DAFF14ECE9C429B2D26DCB60DAF /* DomainResource.swift */,
+				1A435362B9F656C1DED78B34CD1C6E4A /* DomainResource+Containment.swift */,
+				D2337538F9859BBEAAF0F0A6DB62A412 /* Dosage.swift */,
+				198FD3A4C8203F30F329344EE0C14C0D /* Duration.swift */,
+				FEBAD46AD90482D03799384394AD1001 /* EffectEvidenceSynthesis.swift */,
+				0A5D552CDB5D3FC58F665C751C8DC0EF /* Element.swift */,
+				EC7211A0B25E6DE37D6A21FE5FF14198 /* Element+Extensions.swift */,
+				4FF4928A0485026EE82758B833EC272B /* ElementDefinition.swift */,
+				6B42F7B710C2E330D0397461BDAE6A44 /* Encounter.swift */,
+				D5DBEA7338A2BD06FBA897E1923448AE /* Endpoint.swift */,
+				27F18A9A8697CC23C858C2E5B3138724 /* EnrollmentRequest.swift */,
+				79E0943B81E9104AC3883B4F14E0E179 /* EnrollmentResponse.swift */,
+				2CD34FFD0BB3DE34CB8AF9428440A13C /* EpisodeOfCare.swift */,
+				31045D6202ECC32223A32235C85DDDB5 /* EventDefinition.swift */,
+				BEBD8E01F4F2F0609702CDB712855492 /* Evidence.swift */,
+				5387459DB9B31F449A4BBB0943B9D8CF /* EvidenceVariable.swift */,
+				8276E94C529DFB1E1E82EA8F70D91B80 /* ExampleScenario.swift */,
+				3A4B5102F2BEB8D23BBB1D2002675343 /* ExplanationOfBenefit.swift */,
+				C0938AF4547BC8ED9857F444AF1ACAC5 /* Expression.swift */,
+				D1BBF6D8E1B3E503FD599F08F267427A /* Extension.swift */,
+				6BC9FF2CB99209BDC0C0592DC24C30F1 /* extensions.swift */,
+				DFDE457782A742D368E90004BBB7BA22 /* FamilyMemberHistory.swift */,
+				673EB09C2E56683A421D246AAC893854 /* FHIRAbstractBase.swift */,
+				133C8C4D9511488ADB993B16F1A1304C /* FHIRAbstractBase+Factory.swift */,
+				56FD34DC17793236B95AFD87D4BD6D80 /* FHIRAbstractResource.swift */,
+				FFBAD23C5204E996071F866A04A82605 /* FHIRBaseRequestHandler.swift */,
+				E4B06113E9B5C7A25A357334601751B1 /* FHIRBool.swift */,
+				71BF1AD003A4ABCABDF7C1C21D7F07B0 /* FHIRDecimal.swift */,
+				B7507DD009D21977E105EB10ED3D5FD5 /* FHIREnum.swift */,
+				1ACF995E94CBC88AF7DFAF312E444E55 /* FHIRError.swift */,
+				6EC98874C71D2F25D37166119EF1F2C2 /* FHIRInteger.swift */,
+				9E29648F54CDB72EC28CDDD847102C8B /* FHIRMinimalServer.swift */,
+				AB76939E0452E8781B8C602C881289B3 /* FHIROpenServer.swift */,
+				0F6DDE61CDA5CB9D90A42A0BDF369E9A /* FHIROperation.swift */,
+				38E3B966E240EA87041D3A011C051D55 /* FHIRPrimitive.swift */,
+				DEAC2CCA3A0C6151EAC67BB10F1609F1 /* FHIRRequest.swift */,
+				99D6333CF5938ACE36753F6EE5054778 /* FHIRRequestHandler.swift */,
+				55FF2E24654B70F37A3D8EA7AE861C12 /* FHIRSearch.swift */,
+				7075F3D82F6369EA94DD9FCC0D481533 /* FHIRServer.swift */,
+				059A1C53995ED8072E4ACF536B08E881 /* FHIRServerDataResponse.swift */,
+				5934F9CFF141747DED8AD617512FA2DD /* FHIRServerResponse.swift */,
+				1000F3AB4CEB5566370FFD9377C500BC /* FHIRString.swift */,
+				BFF5A2E54E4C447A0DAB3EFE404E562F /* FHIRString+Localization.swift */,
+				88939276971E3F64D8B04A86E2373FBC /* FHIRType.swift */,
+				1A9737A1AFE4D04EDA693368FC9845F5 /* FHIRURL.swift */,
+				057345E9D005F1991404B4E49C84C907 /* FHIRValidationError.swift */,
+				58E632D993E1DFD5E0723D39C5DD6197 /* Flag.swift */,
+				B0237139B04C5AFD28BB7C778CB9CF1D /* Goal.swift */,
+				1C7851754D5DD134AD067AC92B96E518 /* GraphDefinition.swift */,
+				9109028953ECE9E491BD408983A85AE2 /* Group.swift */,
+				4C088876DA3DE7C7CF97DCF0903395AF /* GuidanceResponse.swift */,
+				821F64C8A6519C7DDBE44CEE1D621140 /* HealthcareService.swift */,
+				E3DB4B88BD5CD7623CE7946B4057C7E8 /* HumanName.swift */,
+				CD24A533777CFDDDD8C3BCFA1FE04771 /* Identifier.swift */,
+				FCEB6DAF201B721C95FDEDC2C034008C /* ImagingStudy.swift */,
+				951046EE6CC40CC60CFEADE591C42E27 /* Immunization.swift */,
+				E6DCEC8DE6D53EA9C45D2BE639F0FAB6 /* ImmunizationEvaluation.swift */,
+				829326E1D5F1A65F598B174CC6964CE4 /* ImmunizationRecommendation.swift */,
+				8687B8F1CC21B35BD6E9267AF77D9260 /* ImplementationGuide.swift */,
+				CEED8AF8AA43C8AFBA5EA70087E9525F /* InsurancePlan.swift */,
+				29E53F61DD64B7AC10833BB6C6122328 /* Invoice.swift */,
+				92873CF0CAD2B9A30331076E8780E969 /* Keychain.swift */,
+				8F780EC60A00B8A9E2AAF1354EA8D65B /* Library.swift */,
+				C711B4B17E0E4E6F59F14034B3255E5C /* Linkage.swift */,
+				868DC5204E6546CB12BD92DE1DD1F512 /* List.swift */,
+				D66966635C67674FDF8F9521FFC6BDD6 /* Location.swift */,
+				324F9B9DBE2255B83E1975F864AFAC6C /* MarketingStatus.swift */,
+				DB371FC5A54369F03BCC0BFF85873D54 /* Measure.swift */,
+				80139983E8DF9E22A016C7DBF8A465B4 /* MeasureReport.swift */,
+				4F39A4F5E2D59BDC3AE6BC0818D0FC64 /* Media.swift */,
+				9663F75870421992E6A6E531645F0364 /* Medication.swift */,
+				AFCFFD7E6F3AB43ADE3CF3B63AF49F56 /* MedicationAdministration.swift */,
+				A519CD0620D127FE987123E95B85EA7B /* MedicationDispense.swift */,
+				9D13D0AED82D1B27A5FF5A691C6303EA /* MedicationKnowledge.swift */,
+				1047387ED5E33BB1EA12A366A9684F15 /* MedicationRequest.swift */,
+				927C93B208AE1D1DEC26234F877BF9E1 /* MedicationStatement.swift */,
+				DBD763453151E8EF59C62D10C2C44D2B /* MedicinalProduct.swift */,
+				FCB6862D1CCB64D525814093196CA036 /* MedicinalProductAuthorization.swift */,
+				06667F61E7F80A697168B1BA88D4353D /* MedicinalProductContraindication.swift */,
+				5DDC12BD2FF8D65729D37A238BFA8AAC /* MedicinalProductIndication.swift */,
+				D5607C5D807EECB3CC10C1CE5DD7C18C /* MedicinalProductIngredient.swift */,
+				1F928B5EB738F815C4A0F6561CE1553A /* MedicinalProductInteraction.swift */,
+				12F9B14ED2A29DE30C94051000955D18 /* MedicinalProductManufactured.swift */,
+				3C52D2FF2530815EB06C04837BCF006A /* MedicinalProductPackaged.swift */,
+				D1DEE30857268EF6B773B84EDAFCA57B /* MedicinalProductPharmaceutical.swift */,
+				6588884B9B0CD26978370614191CDBF6 /* MedicinalProductUndesirableEffect.swift */,
+				C5027049CBA99294CD711B0779414787 /* MessageDefinition.swift */,
+				377010D3E6062623DD399A3CC4A57A40 /* MessageHeader.swift */,
+				EA467E88C56325F71EDC7F627927BC0B /* Meta.swift */,
+				D18A0BE192FAC7766F989F7AE3324660 /* MetadataResource.swift */,
+				6CC349C758C456A3597890A36D877A80 /* MolecularSequence.swift */,
+				B2047A3D56C3BB1B0F990383B3251A1F /* Money.swift */,
+				78392DB50C26B6CC230CEB2BEE93E7DC /* NamingSystem.swift */,
+				F1335CE15E6A9F25D1A864B66FB35731 /* Narrative.swift */,
+				AAC7BD02D9AF098A93AEB1EADAB4A45A /* NutritionOrder.swift */,
+				E4455BBA8E881BBB5AE81A0B15E334FF /* OAuth2.swift */,
+				52C1E40BD3E0B94E9F47380DC1B5AEC9 /* OAuth2AuthConfig.swift */,
+				93379D9614318318D295DB0EF88FBA90 /* OAuth2Authorizer+iOS.swift */,
+				4929D4297793C325923428BA7FE514E5 /* OAuth2AuthorizerUI.swift */,
+				7362790D98636D59282766A5EB75FDDA /* OAuth2AuthRequest.swift */,
+				C744751F78086D8A99F05276C7EFA114 /* OAuth2Base.swift */,
+				1B40F08F98E6445ED0DB05BDE7010D8D /* OAuth2ClientConfig.swift */,
+				EFD92D8A5834A9022B8CBA9BDFF34D2A /* OAuth2ClientCredentials.swift */,
+				72FAA578499772BB4F6D3CD5D85F42A5 /* OAuth2ClientCredentialsReddit.swift */,
+				6DFA6A2F9687EF0969444031607DC486 /* OAuth2CodeGrant.swift */,
+				20E4AE4D97D9DC807E545F89921989C5 /* OAuth2CodeGrantAzure.swift */,
+				C11501D19413028C9032926BB765697B /* OAuth2CodeGrantBasicAuth.swift */,
+				280B76A7149DF9E9A7FB9B333719A73D /* OAuth2CodeGrantFacebook.swift */,
+				5F874D5628806F95BC06742B40A8F166 /* OAuth2CodeGrantLinkedIn.swift */,
+				E61C12A3D7566A3B49058398E117D43A /* OAuth2CodeGrantNoTokenType.swift */,
+				62E9A45C71D5373A33D7068707F0E739 /* OAuth2CustomAuthorizer+iOS.swift */,
+				2B0E8DC1F78C7DD5A32033CB76D9689E /* OAuth2CustomAuthorizerUI.swift */,
+				303B606BCEDEADDE7681FB28BABB559B /* OAuth2DebugURLSessionDelegate.swift */,
+				0F1D3E1B3614CF26D4F8611B3D2BFB94 /* OAuth2DynReg.swift */,
+				C3A88600BA9B43C9FDB24A6F40E01706 /* OAuth2Error.swift */,
+				19438004044999F667C6392C00C32FFE /* OAuth2ImplicitGrant.swift */,
+				D7A57D753CFF7A9B6D315A8390DD68C9 /* OAuth2ImplicitGrantWithQueryParams.swift */,
+				8107F9F094DB7E53033F0DA723A6A683 /* OAuth2KeychainAccount.swift */,
+				D6C468F55BCFFED6ECC2620AD5F48BA7 /* OAuth2Logger.swift */,
+				1F7901C4640164F78029A4C901CD23B3 /* OAuth2PasswordGrant.swift */,
+				331BAF2DBA1A1641C453643F8F1E06B9 /* OAuth2Requestable.swift */,
+				DBBE1BD3EB28277A5411E8F77DDED31B /* OAuth2RequestPerformer.swift */,
+				A20659C21A4426839518760B5AEE18B9 /* OAuth2Response.swift */,
+				C07CC00C04741A244A61AA709853719C /* OAuth2Securable.swift */,
+				A07E49A2379CA7A5483B38EED62165F7 /* OAuth2WebViewController.swift */,
+				EEAA028F8AE16DA068575B340E5FED51 /* Observation.swift */,
+				14681C1F28A546C8197DB8E8E0C4C9F2 /* ObservationDefinition.swift */,
+				A9BD95CA70CAB298FEE0E9BF3EC084EF /* OperationDefinition.swift */,
+				280C79E33CF6A46E0CE2446EB8DB459C /* OperationOutcome.swift */,
+				3E79675EA1D31B20DF58C7D9C63DB3E5 /* Organization.swift */,
+				4D15A87D554C3E2F9CDFCCED21A94660 /* OrganizationAffiliation.swift */,
+				EF1213E8A51F2BBF8F01FC96853ABF6F /* ParameterDefinition.swift */,
+				6C7AE7FDBEAAF55CB377C60095B8127C /* Parameters.swift */,
+				F519838A776923B57241D7C35234102C /* Patient.swift */,
+				B9919DF546FFD16DA065B8C1913A7D72 /* Patient+SMART.swift */,
+				86A4420422D558AEC9153F5889B16AF2 /* PatientList.swift */,
+				30542F37324343440AA1CAC8300C25C2 /* PatientList+iOS.swift */,
+				61BBBC60D574080EC7ADF7584321A9EC /* PatientListOrder.swift */,
+				8E73DCEAFEE4CAF49E511603BB3E6C51 /* PatientListQuery.swift */,
+				B1BC245CA11A6A9AFDDB536E90EB3F07 /* PaymentNotice.swift */,
+				ABE3A3D27B07663E2EF2195EDE32E3B9 /* PaymentReconciliation.swift */,
+				053C1377660C8B10376C3F72986F4B57 /* Period.swift */,
+				67F65E2E0C70361E0475AB602F6BC0B7 /* Person.swift */,
+				F082771E08531CA782DC002966307816 /* PlanDefinition.swift */,
+				54FDC1753976E0D91F895D52BC907B91 /* Population.swift */,
+				04B91337C5571A51C8FCEBA2FD2DE637 /* Practitioner.swift */,
+				B93A9CECCAD29397CEA2C20644015DA9 /* PractitionerRole.swift */,
+				6D70E9EBF26808F53A496119F5F34E24 /* Procedure.swift */,
+				48FE50FA215073BAAB65446EF742A1AC /* ProdCharacteristic.swift */,
+				2C087F4AC426197E91E2376ED3FD6CBA /* ProductShelfLife.swift */,
+				C0B02EF340895BF3A72EF8FC6008EE30 /* Provenance.swift */,
+				78C33895E0699865EC1EB86440E901DB /* Quantity.swift */,
+				C43A524DF44F8982228AAA170306C51C /* Questionnaire.swift */,
+				E64073EB99860960DDA5D23B3BF7A458 /* QuestionnaireResponse.swift */,
+				455D4116732099C3FE6E7083DDD81B4A /* Range.swift */,
+				2272980DD126F111A0ECA974A2CFAA3E /* Ratio.swift */,
+				38EE75E1A427CE7AC3DC4BED257A04B1 /* Reference.swift */,
+				CC5BA1994433FD027B5C1287640FAB0F /* Reference+Resolving.swift */,
+				BAA39F36FBC04C1F5885AE9F5C3F9273 /* RelatedArtifact.swift */,
+				AB42B5DBF6AC8BAA49901003EE1FA3FF /* RelatedPerson.swift */,
+				BF20CFBE59B345953D858A6C3C67A53E /* RequestGroup.swift */,
+				339B854B143B231060D9491855AF3D81 /* ResearchDefinition.swift */,
+				A43F14829B982F37F819C71BF16B5AB0 /* ResearchElementDefinition.swift */,
+				D1247789AC325ED5F6060EBE0E952702 /* ResearchStudy.swift */,
+				6D1DEF38BD66D485D2B05669449A7E2E /* ResearchSubject.swift */,
+				0E51D21DBE0DDD069A96ED5FA523CE80 /* Resource.swift */,
+				944AA23C73EE56CDEE6249812165C88C /* Resource+Instantiation.swift */,
+				43753399E02AB8548779F259C90DBD7F /* Resource+Meta.swift */,
+				FFA364D5D21922CCD0DC95654AC0930E /* Resource+Operation.swift */,
+				EDC212F1CA3AA04104136B85A0AFFF56 /* Resource+REST.swift */,
+				0ACEADA1C3ABA012177D4433536587E4 /* RiskAssessment.swift */,
+				25B49BE4D6BF071EE974AD12818E3881 /* RiskEvidenceSynthesis.swift */,
+				E2E453075252A20B7C6B403102B98DD8 /* SampledData.swift */,
+				9ED543FA131C3A6D0272FCD930B4474D /* Schedule.swift */,
+				81F35514706A9B8AF999D7E8365F3807 /* SearchParameter.swift */,
+				917B385843B52057D4529611F2694605 /* Server.swift */,
+				C2044D5E1B259789751A18815BDA99AB /* ServiceRequest.swift */,
+				6E4CDFB043E54C7159721CAEC195BA2F /* Signature.swift */,
+				AA9F29C5A2DDA8B7EBF71B0C56499B0B /* Slot.swift */,
+				1496090B63516E6E2657D26EB6B957AD /* Specimen.swift */,
+				88D0A3D87A601C86679D50516B07E87D /* SpecimenDefinition.swift */,
+				597E1725E80F5F6461530371C682D541 /* StructureDefinition.swift */,
+				C2E9298DDE44F0E220E70DAA071D71BF /* StructureMap.swift */,
+				912D78070846BAFECE17ED2BDD603019 /* Subscription.swift */,
+				8E8CBB2A77351AE87FE4208A69B6C363 /* Substance.swift */,
+				A1750521AA80DC7B41AE0D090FADAACF /* SubstanceAmount.swift */,
+				E07B7C01E655B7A7026412163730A6DD /* SubstanceNucleicAcid.swift */,
+				EAFB92694B2DC6BCC1AA91674874C6DA /* SubstancePolymer.swift */,
+				658254479D65A799EDC9B85E3D7C17CC /* SubstanceProtein.swift */,
+				142446DAA6CDEAEE841E774020C3C02B /* SubstanceReferenceInformation.swift */,
+				F655A5AB1F63348A8F515E612E03E926 /* SubstanceSourceMaterial.swift */,
+				5410E0988A2CE1ECBF6693B5AF771433 /* SubstanceSpecification.swift */,
+				0421CE8E5E76CA047571A0172C898C6B /* SupplyDelivery.swift */,
+				72E5D4DF6006037809157FED90F6EA1C /* SupplyRequest.swift */,
+				8AA5E2ABB189C23BD11ADA8ECC7010D3 /* Task.swift */,
+				C7FCA9E1538D676E5B08F79BC8D5CDA1 /* TerminologyCapabilities.swift */,
+				FDED5E4FD0DAE38E9D8D42F23FD02E29 /* TestReport.swift */,
+				F7F45ABDC79D141FFBB71759F285351A /* TestScript.swift */,
+				93C043E6FD96675A189889820A151EEE /* Timing.swift */,
+				DD783B4F536FD67EC0C80C365AF1A61D /* TriggerDefinition.swift */,
+				D4BC07B2FFE1B675E608B68C094285D8 /* UsageContext.swift */,
+				6C82A6D99A896E3BD2422C9C971783C4 /* ValueSet.swift */,
+				DE90ED398663B48A5E761781E56BC8BA /* ValueSet+Localization.swift */,
+				D6F8E6D5BC87683EB30CD00F36F4561C /* VerificationResult.swift */,
+				DED0C0D786C6FB8E99C0622C64B44F27 /* VisionPrescription.swift */,
+				C1BA2215A40F759D34F73857B505697E /* Support Files */,
+			);
+			name = SMART;
+			path = SMART;
+			sourceTree = "<group>";
+		};
+		B8A5BBDB7A246874D56795091DC529A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				943873BDA999AAF9B7ABB7DCFC6AB699 /* SMART */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1BA2215A40F759D34F73857B505697E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEED4AC82F4378E5C2FC99037A998352 /* SMART.modulemap */,
+				A803163724B7E1E39508BE60D6530F56 /* SMART-dummy.m */,
+				711E47132B4A92D7E65BA7D4D68BCD3A /* SMART-Info.plist */,
+				80D599E97AD93174C9F03C3D9C7C0CC9 /* SMART-prefix.pch */,
+				1CB3ADBBCBDBCB29B802DCBCD949B3C4 /* SMART-umbrella.h */,
+				E154EF53EBF0BE712EE9D1AE7D30CD4F /* SMART.debug.xcconfig */,
+				5F54B01428D8480273B69D80839436AF /* SMART.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SMART";
+			sourceTree = "<group>";
+		};
+		CDB6177D4B685D45196C34DD367D7E9E /* Pods-EHealthInnovationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2CCA4B2B30B7095A4339CB90373A73E /* Pods-EHealthInnovationTests.modulemap */,
+				96F15E36715462F47437EF1673757BCD /* Pods-EHealthInnovationTests-acknowledgements.markdown */,
+				4C8F3E6937043AF753B77A180E5293CA /* Pods-EHealthInnovationTests-acknowledgements.plist */,
+				638EF462DF0E733D5AF83B664892878D /* Pods-EHealthInnovationTests-dummy.m */,
+				B08CD969E0B24D5048C11654129285D6 /* Pods-EHealthInnovationTests-frameworks.sh */,
+				50083DFA7316F3F20FA0C028B8FA9677 /* Pods-EHealthInnovationTests-Info.plist */,
+				7BA541E93591850836112B2F2502DBB1 /* Pods-EHealthInnovationTests-umbrella.h */,
+				E66B085D610642800BB221F5C921FDD5 /* Pods-EHealthInnovationTests.debug.xcconfig */,
+				5D4CFBA07BC4BFE589356545E81AA32A /* Pods-EHealthInnovationTests.release.xcconfig */,
+			);
+			name = "Pods-EHealthInnovationTests";
+			path = "Target Support Files/Pods-EHealthInnovationTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B8A5BBDB7A246874D56795091DC529A9 /* Pods */,
+				489BF9F7965555C69FF78E7369FD2D6D /* Products */,
+				606D3E638E2DF65E9D925CA4472A78DF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08C808FAF30D08D39FD9FBFAE07DFC38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351BC998A22E9EAF6FCC5006824DE142 /* SMART-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FFA2483C3B8921DC4C511EEFBBF79D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC12F0686B4D3BB3ACAB58651F5227BE /* Pods-EHealthInnovation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7EFE1B88CA280EE23B688F8FEFFC48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC441F934BEBA3EA257B4B1DA9C34F0 /* Pods-EHealthInnovationTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		81A96C8ABA45F17625492FF9A86B3794 /* Pods-EHealthInnovationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB48F0611608268729637B7F5EB9A305 /* Build configuration list for PBXNativeTarget "Pods-EHealthInnovationTests" */;
+			buildPhases = (
+				BB7EFE1B88CA280EE23B688F8FEFFC48 /* Headers */,
+				E0238DFF51280CAA4591B0DE39A34F60 /* Sources */,
+				68FF7D698F0D1A14273847E51BBBA634 /* Frameworks */,
+				624A904432FC73DF2FAB9042F7FCB7F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C6BCF030C857D73B314F60299BBABB /* PBXTargetDependency */,
+			);
+			name = "Pods-EHealthInnovationTests";
+			productName = "Pods-EHealthInnovationTests";
+			productReference = 493ED6744929DA2816FC786C98F00E6D /* Pods_EHealthInnovationTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8ABA1AB26A6006077AFFDFE3287980C8 /* Pods-EHealthInnovation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C6CBC809966E131D3EF5E6F8C03C23 /* Build configuration list for PBXNativeTarget "Pods-EHealthInnovation" */;
+			buildPhases = (
+				6FFA2483C3B8921DC4C511EEFBBF79D4 /* Headers */,
+				F96895887B2DEF4E7DC473C8DF56B5B6 /* Sources */,
+				2376FB1E784FE0C6FEAD65C082EBED53 /* Frameworks */,
+				6EBA6E709A417AF0837A3B20C08C4707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E1088797A0D0FCBF5A1343D3D8E98F9 /* PBXTargetDependency */,
+			);
+			name = "Pods-EHealthInnovation";
+			productName = "Pods-EHealthInnovation";
+			productReference = CB357CF363EBC5DF6FB4BE01B906DA21 /* Pods_EHealthInnovation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E53505E3ACE46F88A79F24402BC62CBA /* SMART */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76DF3A5A6B6F3B254C10C736A32C74DB /* Build configuration list for PBXNativeTarget "SMART" */;
+			buildPhases = (
+				08C808FAF30D08D39FD9FBFAE07DFC38 /* Headers */,
+				C3E245AE02ABB8BEF92A4051DE79DFB0 /* Sources */,
+				58FF521F0719EDC260771A72DD77E27F /* Frameworks */,
+				E1704B4DDCE7BCFEFCA671B419806FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMART;
+			productName = SMART;
+			productReference = B6F3000B48A81798372E6E8DBDAB0B1E /* SMART.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 489BF9F7965555C69FF78E7369FD2D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ABA1AB26A6006077AFFDFE3287980C8 /* Pods-EHealthInnovation */,
+				81A96C8ABA45F17625492FF9A86B3794 /* Pods-EHealthInnovationTests */,
+				E53505E3ACE46F88A79F24402BC62CBA /* SMART */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		624A904432FC73DF2FAB9042F7FCB7F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EBA6E709A417AF0837A3B20C08C4707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1704B4DDCE7BCFEFCA671B419806FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3E245AE02ABB8BEF92A4051DE79DFB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824BC6129118CB7FFAF0ABA064B7AD9C /* Account.swift in Sources */,
+				F4C1EC3ED905B316E52733DE00C02026 /* ActivityDefinition.swift in Sources */,
+				1EDD5C67D9B33F57902B7B7F50CD489A /* Address.swift in Sources */,
+				B15307DD8EF36F4B0D1426A2D8E75BBC /* AdverseEvent.swift in Sources */,
+				E2A49E37E1EFD7D44792C68BB7B5ABFF /* Age.swift in Sources */,
+				3CE9B1F0DEF2B4C66127CA43E79CEB62 /* AllergyIntolerance.swift in Sources */,
+				904610B7377BF158774D17F1D437BF01 /* Annotation.swift in Sources */,
+				07F144F181A24662632D7D77A680F9FC /* Appointment.swift in Sources */,
+				BB541E65CA1902C32C2BE1F4BE81B9D2 /* AppointmentResponse.swift in Sources */,
+				080E93CFDA40B39568925E527F2B917A /* Attachment.swift in Sources */,
+				76D7B724187C4E6789B70E5AEF736DE3 /* AuditEvent.swift in Sources */,
+				CD9C3EE3FA662A35BE822E2710644995 /* Auth+iOS.swift in Sources */,
+				1407ED658AD51B97FE22A234ABE6F9C6 /* Auth.swift in Sources */,
+				E74080C2010EB228E4B84B4CCF9EEFAB /* BackboneElement.swift in Sources */,
+				9E7BDBD88E542BEC82CBE8D28C51C067 /* Base64Binary.swift in Sources */,
+				D1D6208E47909AE991A01C7FE9B1D593 /* Basic.swift in Sources */,
+				63CD64D76BC55A11FAEA778858116715 /* Binary.swift in Sources */,
+				2C87DF329280AE6D43B04E186DC3FBA3 /* BiologicallyDerivedProduct.swift in Sources */,
+				BE122DDA7AB9DC5F413F691D6C6FAEAB /* BodyStructure.swift in Sources */,
+				5A8810E955FC0807D1F938DDAB19666B /* Bundle.swift in Sources */,
+				CAD6DC84889A52A2283A8C4A8A32632A /* CapabilityStatement.swift in Sources */,
+				6C6512E1C3773E054882075B70221091 /* CarePlan.swift in Sources */,
+				1305E70996DE3630D846A26FC55BDB56 /* CareTeam.swift in Sources */,
+				E29D11F0F130C45EAD9DBC6F42AB771E /* CatalogEntry.swift in Sources */,
+				20AD1676A7FB8711C3227C12A2CC879E /* ChargeItem.swift in Sources */,
+				DD1A5718AF3F810CE69190B61EDAE171 /* ChargeItemDefinition.swift in Sources */,
+				3EF9F89113FB9401079E2DFAEA1B95F6 /* Claim.swift in Sources */,
+				17AFAE0ADCE40CA8D2324D832B3BB583 /* ClaimResponse.swift in Sources */,
+				16015536F68D08C337CE341EAC3BBEB0 /* Client.swift in Sources */,
+				78E8432D63AE9464C5AF6FCA4B59FC09 /* ClinicalImpression.swift in Sources */,
+				8F1CF405051B9E23B1A6029369BA298B /* CodeableConcept.swift in Sources */,
+				2C23CC9D17875CB4CA254B871B030F57 /* CodeSystem.swift in Sources */,
+				0291C282741826BC9403A4DAF73BFACC /* CodeSystems.swift in Sources */,
+				567F7F2ACA609CE32C8899E456CF8A58 /* Coding.swift in Sources */,
+				023865F8CF00746CC08E6F9A7EBFCEC0 /* Communication.swift in Sources */,
+				126AD8FC45AE3DEFD14D3F45F8AB357C /* CommunicationRequest.swift in Sources */,
+				7F0688967A564128EFDFDBB9EFE9B576 /* CompartmentDefinition.swift in Sources */,
+				A3D3CB35AAC25DE1ED27E4B3FD78BCF8 /* Composition.swift in Sources */,
+				0A3ED818F767D6864CC5379FD185EF05 /* ConceptMap.swift in Sources */,
+				F930C866D1B7F2B2087C5105D5AAEC12 /* Condition.swift in Sources */,
+				0DF71FCDEF7B465D025917F48CE329FA /* Consent.swift in Sources */,
+				86B8FD5F2070825A4AA83CD5CEC290CE /* ContactDetail.swift in Sources */,
+				C31A0FC2EBA23B887E8410942D302D54 /* ContactPoint.swift in Sources */,
+				7CE32F92ABB15139026D3160A48E7B07 /* Contract.swift in Sources */,
+				0BA8840CA0016D2104966A62864A3768 /* Contributor.swift in Sources */,
+				FB55A034196EA97A32D8DDF9F1751923 /* Count.swift in Sources */,
+				91D57402533530A048A6662E4387C6B5 /* Coverage.swift in Sources */,
+				C0F821F2A2EB6B86C35AEE93ACCE1035 /* CoverageEligibilityRequest.swift in Sources */,
+				B155B39FE8521C86C21D88D26A642339 /* CoverageEligibilityResponse.swift in Sources */,
+				5EB9F3A74CDB345D2E6DF00CE82AA7F3 /* DataRequirement.swift in Sources */,
+				73171F381067F6C1CB38D127594D266A /* DateAndTime.swift in Sources */,
+				82A61F393B2DFAD900D1845066783C35 /* DetectedIssue.swift in Sources */,
+				02E067EA429F803667AAE58F8BEE74BC /* Device.swift in Sources */,
+				1D937D91A83DD685675DD96F710C4A38 /* DeviceDefinition.swift in Sources */,
+				D20B4030D8D1FA0272FFF9CA398F7AEE /* DeviceMetric.swift in Sources */,
+				1487F586DAF599884DCDF0208ECCF3A0 /* DeviceRequest.swift in Sources */,
+				A19F2726DF624082BA53519EDDD97F90 /* DeviceUseStatement.swift in Sources */,
+				67FC638BC3368ED758343044E6B43863 /* DiagnosticReport.swift in Sources */,
+				60CD60A8289B0DCEFADE115293373F68 /* Distance.swift in Sources */,
+				204194E7BB35F9208D3F9BA86C57285F /* DocumentManifest.swift in Sources */,
+				7E43736A36EDD3FECE42D49B403E0EAF /* DocumentReference.swift in Sources */,
+				379E4B0E6260497D1EAE3C8F22773727 /* DomainResource+Containment.swift in Sources */,
+				77CCBBB35FA8C1B235BEFDFEBEA89B44 /* DomainResource.swift in Sources */,
+				EDD7361B6AF0E4B4792AA2F7BAC4FC1C /* Dosage.swift in Sources */,
+				01AA539ACC1182F8CDD5891180C72F3E /* Duration.swift in Sources */,
+				D6FE813FEA987FD350F1E54FE8FBE0F5 /* EffectEvidenceSynthesis.swift in Sources */,
+				D6A5193B59E38C901A8BD1E5F197C080 /* Element+Extensions.swift in Sources */,
+				1E20B4D312A90898926AF659B9D033BD /* Element.swift in Sources */,
+				1BBA919053839B63C910DC6EBC946086 /* ElementDefinition.swift in Sources */,
+				498185163AF2DFBE56B608ACCA813C96 /* Encounter.swift in Sources */,
+				C2242C0499FD03CC990C963336DF0D8A /* Endpoint.swift in Sources */,
+				7EC7B5D2666E3DB55364703926F0A7B5 /* EnrollmentRequest.swift in Sources */,
+				A47DCACD21D987BD94DE8D2FD128AA18 /* EnrollmentResponse.swift in Sources */,
+				858207595B722EC6127CE5CA329025D5 /* EpisodeOfCare.swift in Sources */,
+				A7A4342E53317A7373EECAD5AE9965E7 /* EventDefinition.swift in Sources */,
+				38B082EA925E3C7C38B4A3B6C3E52048 /* Evidence.swift in Sources */,
+				A99EB59928B50EB19B1E7AACB1EA0796 /* EvidenceVariable.swift in Sources */,
+				A09EFBB06AEA79DA27236CECD7AC81F9 /* ExampleScenario.swift in Sources */,
+				0378C1E14C5D221F3D70CAA03DD1D023 /* ExplanationOfBenefit.swift in Sources */,
+				1B7B9D8234D3599BFC60919CF6008B0C /* Expression.swift in Sources */,
+				E7BDF87579F9013C9F3320510736207A /* Extension.swift in Sources */,
+				63110BF021872A676F8D9759ACE07238 /* extensions.swift in Sources */,
+				AD9773A473436455C915E915C970ACFE /* FamilyMemberHistory.swift in Sources */,
+				D983ADA37EBFADAAF35F03C3FE4E6E63 /* FHIRAbstractBase+Factory.swift in Sources */,
+				33F422C06D410EE1739E0F9F3B93130B /* FHIRAbstractBase.swift in Sources */,
+				7C8A8C74E7A22497F1BC5D9EA913F01A /* FHIRAbstractResource.swift in Sources */,
+				0CFC64B1B2E8A5A0688593B68FC46D86 /* FHIRBaseRequestHandler.swift in Sources */,
+				BB51FEE515933EAF1A4FE339D825B360 /* FHIRBool.swift in Sources */,
+				6BE77FDB873828DDAFC8A9F47DB96856 /* FHIRDecimal.swift in Sources */,
+				DFCE318606FB18EFA82FEABF4D72EACB /* FHIREnum.swift in Sources */,
+				F5AE36BC62A773258C88E7C01E4A50FF /* FHIRError.swift in Sources */,
+				4AE0C2F2D8FA5747DBC68D2FFF94206A /* FHIRInteger.swift in Sources */,
+				1877CDEC524B8C856F65EE0DB93D7947 /* FHIRMinimalServer.swift in Sources */,
+				03E0152796361E84A8A4D75DA62FCD37 /* FHIROpenServer.swift in Sources */,
+				CEFBFB01F0713558E4B1942238958F75 /* FHIROperation.swift in Sources */,
+				ECD76B16EE89519F7EF6AB9E5B552D6B /* FHIRPrimitive.swift in Sources */,
+				0564B7D21D07F5824164B7AEE17156F7 /* FHIRRequest.swift in Sources */,
+				6F7EDCF2D2B7A993CBA628FCC65D17D7 /* FHIRRequestHandler.swift in Sources */,
+				8C709D1EEEB75FCBE3BC0D5A2416C00C /* FHIRSearch.swift in Sources */,
+				A341A242F2870070053093DF473F9BB8 /* FHIRServer.swift in Sources */,
+				468EBCABAD39DD001B0CEE3AB55A4971 /* FHIRServerDataResponse.swift in Sources */,
+				532AA4299FD603F664324D3D1B1956AF /* FHIRServerResponse.swift in Sources */,
+				F2B7BC6EB2F07558B0E8D2A22DB8ACC8 /* FHIRString+Localization.swift in Sources */,
+				978309B414D851F8E1ADF35B1C403A59 /* FHIRString.swift in Sources */,
+				12EDF107AFC77505EC0973AF4D8FAF13 /* FHIRType.swift in Sources */,
+				0CF350996C607071D9A4AFCA7B8BFEA8 /* FHIRURL.swift in Sources */,
+				64F9B67764D635CEDD524EDD15A6FB36 /* FHIRValidationError.swift in Sources */,
+				DEE3E2E73D520E4DBE13A81708050BDB /* Flag.swift in Sources */,
+				122989CCC90D0CC421F739FD06FF8E48 /* Goal.swift in Sources */,
+				F34FC778B29EEAC1217329931977E18B /* GraphDefinition.swift in Sources */,
+				53F7F4247F61E4EDC8B8B73095E3C437 /* Group.swift in Sources */,
+				48C25DC13931C87F22C01DA26C346A69 /* GuidanceResponse.swift in Sources */,
+				77EFF7F311472642BB38D2CBF2B6B7C4 /* HealthcareService.swift in Sources */,
+				F82B79A38302ABA918DC7AE89A690395 /* HumanName.swift in Sources */,
+				09A92AFE301C9A3CCE298DE49F0455BE /* Identifier.swift in Sources */,
+				201DFFE674DE7DF294946609599EB5E2 /* ImagingStudy.swift in Sources */,
+				B13F944ECB2FEF6E5B851DA3F7DA26DE /* Immunization.swift in Sources */,
+				2C13EE27D250D0652E3F8ED3C13CEC7B /* ImmunizationEvaluation.swift in Sources */,
+				DE001C187E8611651D3E70EEE61BD4CA /* ImmunizationRecommendation.swift in Sources */,
+				8968AE786F524959A41688382D9F9847 /* ImplementationGuide.swift in Sources */,
+				4D1B843A29C31C675D22237C6CF45AB7 /* InsurancePlan.swift in Sources */,
+				3614B943AD6AE6448B9B45A855366AED /* Invoice.swift in Sources */,
+				87D5485AA902589D46C45D1F59973163 /* Keychain.swift in Sources */,
+				E51CFDD2A73A414EB4A65894127709A1 /* Library.swift in Sources */,
+				FF7BEA9438AD4F705AB67959AEE8F7D1 /* Linkage.swift in Sources */,
+				732F6C3F075A341DF1BCFB85C2DB59AA /* List.swift in Sources */,
+				399E1492CE5EF321916A9423E771CBCA /* Location.swift in Sources */,
+				49A42894F175EA0CD6E39170A573DEE0 /* MarketingStatus.swift in Sources */,
+				B4CB513F9EA725F672F43996281DE22D /* Measure.swift in Sources */,
+				15BFA204961BCE90416DC450BA75EEC7 /* MeasureReport.swift in Sources */,
+				A96543EEFE44F9F586E0AD518F9F5832 /* Media.swift in Sources */,
+				3E15FED79AD6DAACA642B5C87653889A /* Medication.swift in Sources */,
+				82D1FD7086949F6F2ADA1FEE1210B57D /* MedicationAdministration.swift in Sources */,
+				95000F2BC04FBC4FF1961234ABB655D9 /* MedicationDispense.swift in Sources */,
+				9E7A2442A06BC7961D4C2D21BF062108 /* MedicationKnowledge.swift in Sources */,
+				58DC5622C1DB21B8FB64D361A9CA900D /* MedicationRequest.swift in Sources */,
+				D565C6477CBEB3B4687119BB8DDC0577 /* MedicationStatement.swift in Sources */,
+				CDC802098C6935C888F4AA0274F3673A /* MedicinalProduct.swift in Sources */,
+				261627B79C0205C4D5D88EF32DC67974 /* MedicinalProductAuthorization.swift in Sources */,
+				572B5ACE44CB2DEC64C67F7FD42F1F4C /* MedicinalProductContraindication.swift in Sources */,
+				12D9EA80B6F1027569AA061C55D8A028 /* MedicinalProductIndication.swift in Sources */,
+				8CA0B0E868393BD54C280E741FDDCA29 /* MedicinalProductIngredient.swift in Sources */,
+				1FA73211AD6761F94C5176DB80778459 /* MedicinalProductInteraction.swift in Sources */,
+				542DB3AF5B29FF2400E4F2817A9252C0 /* MedicinalProductManufactured.swift in Sources */,
+				D74409F132BD3B51F28A89278BF64B71 /* MedicinalProductPackaged.swift in Sources */,
+				8415FBA802865B18993E592F04B02072 /* MedicinalProductPharmaceutical.swift in Sources */,
+				6204A795F3C9F409AB163E342978F0AB /* MedicinalProductUndesirableEffect.swift in Sources */,
+				C35147A1144AB4A489CFA159E8FD9509 /* MessageDefinition.swift in Sources */,
+				D43DDD5D5A452F33DFB313CFA87390EE /* MessageHeader.swift in Sources */,
+				5360A427C355AC3BACDBCAA8F8EB8EBE /* Meta.swift in Sources */,
+				22AEB985AF03A2EBE1AC1F28B4C57EC9 /* MetadataResource.swift in Sources */,
+				79CD7E1EF8F3838F06ACCF300EE67411 /* MolecularSequence.swift in Sources */,
+				7B7C72D3DF115BDCC96159C4AD03DFBF /* Money.swift in Sources */,
+				9686FAC654244FD0BC63B3F0E83CEFDA /* NamingSystem.swift in Sources */,
+				A003687B44E54ECD91801CBCA386B54C /* Narrative.swift in Sources */,
+				A5A86178C81DF4E5F8752AF184D1DDB6 /* NutritionOrder.swift in Sources */,
+				FC404C51F5E4BA19917F84F1C27E61D3 /* OAuth2.swift in Sources */,
+				E412F5CE1758823EA829E78F69146669 /* OAuth2AuthConfig.swift in Sources */,
+				40644712A150B28DE694F7F6B24E8D6C /* OAuth2Authorizer+iOS.swift in Sources */,
+				420696F8D51AEB908F2668DEB265AB3E /* OAuth2AuthorizerUI.swift in Sources */,
+				880FAF2D6B79290C4431F8EA3A60CE9C /* OAuth2AuthRequest.swift in Sources */,
+				569D98D52F33D3697723AB69D7197350 /* OAuth2Base.swift in Sources */,
+				925583C10583A41DBC56EED19A5131BB /* OAuth2ClientConfig.swift in Sources */,
+				07E3C0DD1BC802C483620D4B43A0CFAD /* OAuth2ClientCredentials.swift in Sources */,
+				8495B634AFE0BEB9F873FD38FCC6B913 /* OAuth2ClientCredentialsReddit.swift in Sources */,
+				F57FED5E187F6F6F3EAD08C764EE2505 /* OAuth2CodeGrant.swift in Sources */,
+				1EE42C5D160C32D52202664E0E267376 /* OAuth2CodeGrantAzure.swift in Sources */,
+				2858EC15C8B349F48A5BB12A9CF9EF19 /* OAuth2CodeGrantBasicAuth.swift in Sources */,
+				FCED8F368C772EFF19694AAA0EC8BD1C /* OAuth2CodeGrantFacebook.swift in Sources */,
+				0FCEF798A0FA0F1A5E55EE4756613A18 /* OAuth2CodeGrantLinkedIn.swift in Sources */,
+				71486D31DA394C0F1DA3A9BDE8335BE9 /* OAuth2CodeGrantNoTokenType.swift in Sources */,
+				5488A51B527F66124929CA525FEC2221 /* OAuth2CustomAuthorizer+iOS.swift in Sources */,
+				8D458999F04878006040306FD2721407 /* OAuth2CustomAuthorizerUI.swift in Sources */,
+				82833CBFFB583135E66DA22D9C4E920B /* OAuth2DebugURLSessionDelegate.swift in Sources */,
+				D2B7402760FF602E98943CE2B575C32F /* OAuth2DynReg.swift in Sources */,
+				CF8D579FC47B51F487A4CC3AC08A2A29 /* OAuth2Error.swift in Sources */,
+				16DBBA45988F1031140F7AD77730EB5A /* OAuth2ImplicitGrant.swift in Sources */,
+				A417D78F31C8F4A62D98A803754F0C4E /* OAuth2ImplicitGrantWithQueryParams.swift in Sources */,
+				402B97222C6FE3297F2737BBF15B444B /* OAuth2KeychainAccount.swift in Sources */,
+				6E902C39792813B505A95ABEA464C51D /* OAuth2Logger.swift in Sources */,
+				F5C6BBD82AA53A569B427B76742BC4D6 /* OAuth2PasswordGrant.swift in Sources */,
+				04AF13C55A3621BFFE0C81910F3EC330 /* OAuth2Requestable.swift in Sources */,
+				E450D2EF6ED82A4A83F74950CC8928AC /* OAuth2RequestPerformer.swift in Sources */,
+				8169DD1739FF63E2069F99957BF4012A /* OAuth2Response.swift in Sources */,
+				507822842D37B260B0619BF4591E57C6 /* OAuth2Securable.swift in Sources */,
+				CD52D5F9843D3138C04EF43585968E74 /* OAuth2WebViewController.swift in Sources */,
+				AF3CAEF99B0FA3370FC0485B57088A03 /* Observation.swift in Sources */,
+				1C5062C252E1F823D75275680D2B2736 /* ObservationDefinition.swift in Sources */,
+				F4BCBFAB340566FBD42FE08553AF6214 /* OperationDefinition.swift in Sources */,
+				C2AEDFD07E90E29B3364358C295677ED /* OperationOutcome.swift in Sources */,
+				8880D3D77B0C68E2A2F79FF18A9BC343 /* Organization.swift in Sources */,
+				77179A0716342C59353D04C0F82FF5DA /* OrganizationAffiliation.swift in Sources */,
+				0FD7FC45CDAE1E59241235819837CFBA /* ParameterDefinition.swift in Sources */,
+				6DB436CECA8D6B03285F3B7968DBB9C0 /* Parameters.swift in Sources */,
+				231C3A68D447A36D3A96E29344F5B211 /* Patient+SMART.swift in Sources */,
+				C6937AC48856F477BB42D0766A76CE17 /* Patient.swift in Sources */,
+				A2E812B480627EE495F800BB16C0829F /* PatientList+iOS.swift in Sources */,
+				C0BF550131B3753F229719C47865BCFB /* PatientList.swift in Sources */,
+				2D53A7D2B9DEFFDE5A8A94B28C98D347 /* PatientListOrder.swift in Sources */,
+				7903C3554DB95110D628707ABC837D52 /* PatientListQuery.swift in Sources */,
+				CD35D2A36669FBA915517EBE244EA693 /* PaymentNotice.swift in Sources */,
+				7D4A9F5F4D595B891AFFF97380105C29 /* PaymentReconciliation.swift in Sources */,
+				3B99E410877FB7493A6AB2337C320BF7 /* Period.swift in Sources */,
+				970555509403134BE301F174DEB29F47 /* Person.swift in Sources */,
+				F47067913167329722D7CE7C8E4D6D6A /* PlanDefinition.swift in Sources */,
+				902FA7AC05846A372F93DADBA144412D /* Population.swift in Sources */,
+				EAC15EC168CC17C771360EE0872B5C1B /* Practitioner.swift in Sources */,
+				75D448FBD53B749D20709E8D55D56718 /* PractitionerRole.swift in Sources */,
+				9B0A4AD539A20811776F0BB01E0AC8A7 /* Procedure.swift in Sources */,
+				84139B09CF94DABD7118B29FD3A195C9 /* ProdCharacteristic.swift in Sources */,
+				DA1849683A01CBF503296C8519159A1A /* ProductShelfLife.swift in Sources */,
+				1E582BFDE078524BA85C7BC132903D52 /* Provenance.swift in Sources */,
+				8F8D5836C96B53E833FA7566028C3824 /* Quantity.swift in Sources */,
+				C97EBB33696AC5029915FB6CFC41F1FD /* Questionnaire.swift in Sources */,
+				6D7FE7B7267E9CF349858674E5F4F8BA /* QuestionnaireResponse.swift in Sources */,
+				16F1A5759316C443EF4F2908564AA218 /* Range.swift in Sources */,
+				F37CADC12ABE1F83DEF24CB41CB32DC5 /* Ratio.swift in Sources */,
+				566E01AF517BBE19C8B923A0D4E8B38D /* Reference+Resolving.swift in Sources */,
+				A7D17C45F335788BC075BADDAF1FCEF5 /* Reference.swift in Sources */,
+				A535A1CD54B9E0B14A3D2BEAD8D1FB0C /* RelatedArtifact.swift in Sources */,
+				22674DF41A2A38FE1FE331224BB79815 /* RelatedPerson.swift in Sources */,
+				430BDE81CF9EE9BAA31ACA28503993B2 /* RequestGroup.swift in Sources */,
+				E3D0C013BE4F4E8D03BC910215A7CC38 /* ResearchDefinition.swift in Sources */,
+				E5DC0963019573E828E8615A80BC75ED /* ResearchElementDefinition.swift in Sources */,
+				5494294DE33AB56AAD2CB11D79D90F7A /* ResearchStudy.swift in Sources */,
+				D25A32E9E5F770A7BC3A0C3B0C73BC13 /* ResearchSubject.swift in Sources */,
+				2035796516D1D9E37AC9F4E1F5C6F4CC /* Resource+Instantiation.swift in Sources */,
+				830C8A58CBD78259339619A4940974C1 /* Resource+Meta.swift in Sources */,
+				FBFC58AFDFAAC1DB36B359B9B3081841 /* Resource+Operation.swift in Sources */,
+				4DEB029727B010C17D83486B0128895C /* Resource+REST.swift in Sources */,
+				7B7E4EA21571EB598CDD00E703225BA8 /* Resource.swift in Sources */,
+				05019249D48C60D7D0834F3B3E15B31C /* RiskAssessment.swift in Sources */,
+				3C1527B3D5279F853BD7B5B3C6A4031A /* RiskEvidenceSynthesis.swift in Sources */,
+				8A49DBC0A73404E8333055EA19216AA9 /* SampledData.swift in Sources */,
+				9164BA284D33B384E9DAA885477E1701 /* Schedule.swift in Sources */,
+				A92577A3213B877B6EEC5CA847C38744 /* SearchParameter.swift in Sources */,
+				DE7E695D6A792E97A79EC1E0359F0AFA /* Server.swift in Sources */,
+				28417A63FD7481189F1AC4DB2BD2DF18 /* ServiceRequest.swift in Sources */,
+				9190A45B1834FE5CBF54984A2097AA5D /* Signature.swift in Sources */,
+				3427C2D09F27778C10ECDC9953A057F5 /* Slot.swift in Sources */,
+				1458059E3ACF476B8C8C1D858F3E4523 /* SMART-dummy.m in Sources */,
+				14F5AC0E655EA14AA78D0CE3BA360755 /* Specimen.swift in Sources */,
+				0D66E04D349D6C06492275A719CE2486 /* SpecimenDefinition.swift in Sources */,
+				92F1FDCF5B59BE0B9882B053C7804A32 /* StructureDefinition.swift in Sources */,
+				D742CD5685E3470D463AD5469D2E8896 /* StructureMap.swift in Sources */,
+				18D4E9A676B0C23A9F5DA64A83B4C5BC /* Subscription.swift in Sources */,
+				C61535B681F6A1B222927402D14B5E62 /* Substance.swift in Sources */,
+				AFF913B7E591C3390F6DE645B55825B3 /* SubstanceAmount.swift in Sources */,
+				7BD61A5778132C05493568095098A2AF /* SubstanceNucleicAcid.swift in Sources */,
+				EE954DFD789B77BE39E98EC849B29C7C /* SubstancePolymer.swift in Sources */,
+				0E67EB4F68466AEB8907E9A0AA73CDE8 /* SubstanceProtein.swift in Sources */,
+				FF7882D93F6AE0488691DCB8647011EA /* SubstanceReferenceInformation.swift in Sources */,
+				3E0C83B53E25BC9C06ECA8A3163F52F0 /* SubstanceSourceMaterial.swift in Sources */,
+				957F3FD6A0D7C564407F951A665860BF /* SubstanceSpecification.swift in Sources */,
+				89B09ECA5686347A03F4BD1FF8798601 /* SupplyDelivery.swift in Sources */,
+				B13BC03C4A752E862861B87A47C18AAF /* SupplyRequest.swift in Sources */,
+				A33B0EE60E60A3D0BE236D67E89B890E /* Task.swift in Sources */,
+				98CFA06FA511AE06564D62420E164C5F /* TerminologyCapabilities.swift in Sources */,
+				9D9506C5EAE0C8FF77D5399E3D1737C9 /* TestReport.swift in Sources */,
+				E03C5C1D1DFB170CA854183EC845259C /* TestScript.swift in Sources */,
+				B367BEB330BE8270E625229575709D19 /* Timing.swift in Sources */,
+				83443720B625445A9B385A4B704343B8 /* TriggerDefinition.swift in Sources */,
+				80764C118CCC816F3EF9D756E81398FC /* UsageContext.swift in Sources */,
+				51C858D5A5418095054CC439F6A9FD7A /* ValueSet+Localization.swift in Sources */,
+				E3FCD528C2044B9FA85A1CFC0FF41EB0 /* ValueSet.swift in Sources */,
+				A9950558E5A450BC40E2C8D7D4A57C20 /* VerificationResult.swift in Sources */,
+				9C36BCC1ACED5FA74AF8C389ECDD96C5 /* VisionPrescription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0238DFF51280CAA4591B0DE39A34F60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A733E0C830826774ECA0E6F92785CD39 /* Pods-EHealthInnovationTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96895887B2DEF4E7DC473C8DF56B5B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C177A37EF322EFADF93D33C06BA2822 /* Pods-EHealthInnovation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E1088797A0D0FCBF5A1343D3D8E98F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SMART;
+			target = E53505E3ACE46F88A79F24402BC62CBA /* SMART */;
+			targetProxy = 2A0C246C8BD6A4C467EBC2F47224F52C /* PBXContainerItemProxy */;
+		};
+		67C6BCF030C857D73B314F60299BBABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SMART;
+			target = E53505E3ACE46F88A79F24402BC62CBA /* SMART */;
+			targetProxy = A5FB4A58644C6AA0C7350BCD105CC620 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28722D4D3C063A0661464154D190098C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C48A47B009AD80E88D5D989FCC6A74 /* Pods-EHealthInnovation.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EHealthInnovation/Pods-EHealthInnovation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EHealthInnovation/Pods-EHealthInnovation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		506867C62B1BCB178934668591AB6708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4CFBA07BC4BFE589356545E81AA32A /* Pods-EHealthInnovationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EHealthInnovationTests/Pods-EHealthInnovationTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EHealthInnovationTests/Pods-EHealthInnovationTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		574DDC092FC45051D06F768918BCFCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E154EF53EBF0BE712EE9D1AE7D30CD4F /* SMART.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SMART/SMART-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SMART/SMART-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SMART/SMART.modulemap";
+				PRODUCT_MODULE_NAME = SMART;
+				PRODUCT_NAME = SMART;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E49D7D527C808835FF82CEB06B53FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F3E7AC528BD59E9F75998D46A66589 /* Pods-EHealthInnovation.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EHealthInnovation/Pods-EHealthInnovation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EHealthInnovation/Pods-EHealthInnovation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		97758795D05ED82C4AB511AD38A39082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66B085D610642800BB221F5C921FDD5 /* Pods-EHealthInnovationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EHealthInnovationTests/Pods-EHealthInnovationTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EHealthInnovationTests/Pods-EHealthInnovationTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AD5F2651507463CC157BCC20132E0D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F54B01428D8480273B69D80839436AF /* SMART.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SMART/SMART-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SMART/SMART-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SMART/SMART.modulemap";
+				PRODUCT_MODULE_NAME = SMART;
+				PRODUCT_NAME = SMART;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C6CBC809966E131D3EF5E6F8C03C23 /* Build configuration list for PBXNativeTarget "Pods-EHealthInnovation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E49D7D527C808835FF82CEB06B53FB4 /* Debug */,
+				28722D4D3C063A0661464154D190098C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76DF3A5A6B6F3B254C10C736A32C74DB /* Build configuration list for PBXNativeTarget "SMART" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574DDC092FC45051D06F768918BCFCA7 /* Debug */,
+				9AD5F2651507463CC157BCC20132E0D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB48F0611608268729637B7F5EB9A305 /* Build configuration list for PBXNativeTarget "Pods-EHealthInnovationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97758795D05ED82C4AB511AD38A39082 /* Debug */,
+				506867C62B1BCB178934668591AB6708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

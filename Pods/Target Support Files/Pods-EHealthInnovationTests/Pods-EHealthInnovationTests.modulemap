@@ -1,0 +1,6 @@
+framework module Pods_EHealthInnovationTests {
+  umbrella header "Pods-EHealthInnovationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
